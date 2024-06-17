@@ -1,0 +1,32 @@
+---
+import './about.css';
+import Image from 'astro/components/Image.astro';
+import image1 from '../../../public/img/imagen_sobremi_1.jpg';
+import image2 from '../../../public/img/imagen_sobremi_2.jpg';
+---
+
+<div class="m-auto max-w-5xl">
+  <div
+    class="grid lg:grid-cols-2 sm:grid-cols-1 items-center justify-center px-6 py-16 m-2"
+  >
+    <div class="m-5 flex flex-col justify-center relative z-20">
+      <div class="ab-title text-[#bf9456]">SOBRE MÍ</div>
+      <div class="ab-experience sm:max-w-lg m-auto">10 años de experiencia</div>
+      <div class="p-3 text-justify sm:max-w-lg m-auto">
+        Morbi ut blandit mauris, ac aliquet arcu. Curabitur non nulla pharetra,
+        sodales neque ac, ultrices orci. Etiam laoreet sem sed posuere mollis.
+        Donec non libero scelerisque, volutpat augue quis, sagittis odio.
+        Curabitur dictum mollis libero vel aliquam. Suspendisse id eleifend
+        sapien. Proin sed lobortis nisl.
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <div class="relative">
+        <Image class="image1" src={image1} alt={'Realización piercing'} />
+        <div class="image2-container">
+          <Image class="image2" src={image2} alt={'Anillador'} />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

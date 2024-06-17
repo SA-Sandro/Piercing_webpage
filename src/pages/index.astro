@@ -1,10 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/header/Header.astro';
+import About from '../components/about_me/About.astro';
 ---
 
 <Layout title="Katapiercing || Home">
-  <Header slot="header" />
+  <header>
+    <Header />
+  </header>
+  <main>
+    <section>
+      <About />
+    </section>
+  </main>
 </Layout>
 
 <style is:global>
