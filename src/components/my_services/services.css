@@ -1,0 +1,25 @@
+.services_title {
+  font-family: "Alfa Slab One";
+  color: #bf9456;
+  font-size: 2rem;
+  line-height: 50px;
+  text-align: center;
+}
+
+.div__services div i {
+  font-size: 2.5rem;
+  margin-right: 10px;
+  color: #bf9456;
+}
+
+.div__services .dv1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.div__services div div {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
