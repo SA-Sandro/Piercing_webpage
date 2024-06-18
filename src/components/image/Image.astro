@@ -1,18 +1,13 @@
 ---
 interface Props {
   src: string;
-  width: number | null;
-  height: number | null;
-  class: string | null;
+  width?: number;
+  height?: number;
+  class?: string;
   alt: string;
 }
 
-const { src, width, height, alt } = Astro.props;
+const { src, width, height, class: className, alt } = Astro.props;
 ---
-<img
-  src={src}
-  width={width}
-  height={height}
-  :class={class} 
-  alt={alt}
-/>
+
+<img src={src} width={width} height={height} class={className} alt={alt} />
