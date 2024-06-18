@@ -1,0 +1,12 @@
+.services-title {
+  font-family: 'Alfa Slab One';
+  color: #bf9456;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.services-list {
+  font-size: 1.3rem;
+  font-family: 'Open Sans';
+}

@@ -1,0 +1,46 @@
+---
+import './services.css';
+import Image from '@/components/my_images/Image.astro';
+import piercing from 'public/img/coloured_piercing.png';
+import Check from '@/components/my_icons/Check.astro';
+---
+<div class="services-title">
+  SERVICIOS
+  <div class="flex justify-center">
+    <Image
+      src={piercing.src}
+      width={50}
+      height={80}
+      alt="piercing icon"
+      class="mx-4"
+    />
+  </div>
+</div>
+<div
+  class="services-list grid md:grid-cols-2 sm:grid-cols-1 justify-items-center"
+>
+  <div class="mx-10">
+    <Check>
+      <div slot="service-name" class="p-3">Barbería y fotografía</div>
+    </Check>
+    <Check>
+      <div slot="service-name" class="p-3">
+        Diseño de peinados para influencers
+      </div>
+    </Check>
+    <Check>
+      <div slot="service-name" class="p-3">Pelado femenino</div>
+    </Check>
+  </div>
+  <div class="mx-10">
+    <Check>
+      <div slot="service-name" class="p-3">Piercings genitales</div>
+    </Check>
+    <Check>
+      <div slot="service-name" class="p-3">Piercings faciales y de orejas</div>
+    </Check>
+    <Check>
+      <div slot="service-name" class="p-3">Tatuajes a color</div>
+    </Check>
+  </div>
+</div>
