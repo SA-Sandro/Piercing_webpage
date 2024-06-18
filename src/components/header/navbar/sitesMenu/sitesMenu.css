@@ -1,0 +1,27 @@
+.sites li {
+  display: flex;
+  align-items: center;
+}
+.sites li a {
+  padding: 0.25rem;
+  font-family: 'Open Sans';
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.sites li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 0.13rem;
+  background: #bf9456;
+  transition: left 0.5s;
+}
+
+.sites li a:hover:after {
+  left: 0;
+}
