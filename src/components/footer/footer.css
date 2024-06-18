@@ -1,0 +1,55 @@
+.social-media {
+  display: flex;
+  text-align: center;
+  padding: 0 2.5rem;
+  justify-content: center;
+}
+.social-media div {
+  background-color: #97703952;
+}
+.social-media div:hover {
+  transition: background-color 0.3s ease-in-out;
+  background-color: #bf9456;
+}
+
+.divide-line {
+  margin: auto;
+  width: 90%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.prueba {
+  border-left: 1px solid rgb(108, 102, 102);
+}
+
+.copy-size {
+  font-size: 0.77rem;
+}
+
+.contact-inf div {
+  font-family: 'Open Sans';
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.sites-container ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.sites-container ul li {
+  padding: 0.5rem;
+}
+
+.sites-container ul li a {
+  color: white;
+}

@@ -1,5 +1,5 @@
 .main-container {
-  background-image: url(../../../public/img/fondo_provisional.png);
+  background-image: url(/img/fondo_provisional.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 20rem;

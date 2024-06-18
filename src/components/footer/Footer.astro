@@ -1,2 +1,56 @@
 ---
+import './footer.css';
+import Image from '@/components/my_images/Image.astro';
+import logo from 'public/img/logo_provisional.png';
+import Instagram from '@/components/my_icons/Instagram.astro';
+import Tiktok from '@/components/my_icons/Tiktok.astro';
+import Location from '@/components/my_icons/Location.astro';
+import Phone from '@/components/my_icons/Phone.astro';
+import Mail from '@/components/my_icons/Mail.astro';
+import SitesMenu from '@/components/header/navbar/sitesMenu/SitesMenu.astro';
 ---
+
+<div class="m-auto max-w-5xl">
+  <section class="flex justify-center p-4">
+    <div class="p-3 flex flex-col justify-center">
+      <div class="flex justify-center">
+        <Image src={logo.src} alt="logotipo" width={150} height={100} />
+      </div>
+      <div class="social-media">
+        <div class="rounded-full mx-2">
+          <a href="#"><Instagram /></a>
+        </div>
+        <div class="rounded-full mx-2">
+          <a href="#"><Tiktok /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="divide-line" />
+  <section class="">
+    <div class="mt-3">
+      <div
+        class="mt-3 flex justify-around items-center flex-col sm:flex-row mx-auto"
+      >
+        <div class="contact-inf mx-3">
+          <Location>
+            <p slot="text-icon">C. Arturo Galdós nº23, Cádiz</p>
+          </Location>
+          <Mail>
+            <p slot="text-icon">arturito@gmail.com</p>
+          </Mail>
+          <Phone>
+            <p slot="text-icon">876 87 8 7 65</p>
+          </Phone>
+        </div>
+        <div class="sites-container mx-3">
+          <SitesMenu />
+        </div>
+      </div>
+    </div>
+    <div class="copy-size text-center p-4 bg-dark text-white">
+      © 2024 Copyright: Sandro Suárez Aranda
+    </div>
+    <!-- Copyright -->
+  </section>
+</div>
