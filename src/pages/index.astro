@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/header/Header.astro';
 import About from '../components/about_me/About.astro';
+import Services from '@/components/my_services/Services.astro';
 ---
 
 <Layout title="Katapiercing || Home">
@@ -11,6 +12,9 @@ import About from '../components/about_me/About.astro';
   <main>
     <section>
       <About />
+    </section>
+    <section class="dark-section text-white">
+      <Services />
     </section>
   </main>
 </Layout>
@@ -24,5 +28,9 @@ import About from '../components/about_me/About.astro';
   @font-face {
     font-family: 'Alfa Slab One';
     src: url('/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf');
+  }
+
+  .dark-section {
+    background-color: #242424;
   }
 </style>
