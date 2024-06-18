@@ -16,7 +16,7 @@ import Footer from '@/components/footer/Footer.astro';
       <About />
     </section>
     <section class="dark-section text-white m-auto">
-      <div class="m-auto max-w-5xl">
+      <div class="m-auto max-w-5xl py-10">
         <Services />
       </div>
     </section>
@@ -24,21 +24,7 @@ import Footer from '@/components/footer/Footer.astro';
       <Gallery />
     </section>
   </main>
-  <Footer />
+  <footer class="dark-section">
+    <Footer />
+  </footer>
 </Layout>
-
-<style is:global>
-  @font-face {
-    font-family: 'Open Sans';
-    src: url('/fonts/Open_Sans/static/OpenSans_Condensed-Medium.ttf');
-  }
-
-  @font-face {
-    font-family: 'Alfa Slab One';
-    src: url('/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf');
-  }
-
-  .dark-section {
-    background-color: #242424;
-  }
-</style>

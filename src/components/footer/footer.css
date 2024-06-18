@@ -1,0 +1,41 @@
+.social-media div:hover {
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 0px 5px 3px #bf9456;
+}
+
+.divide-line {
+  margin: auto;
+  width: 90%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.prueba {
+  border-left: 1px solid rgb(108, 102, 102);
+}
+
+.tamanio {
+  font-size: 0.7rem;
+}
+
+.contact-inf div {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.sites-container ul {
+  flex-direction: column;
+  display: flex;
+}
+
+.sites-container ul li a {
+  color: white;
+}

@@ -17,3 +17,19 @@ const { title } = Astro.props;
     <slot />
   </body>
 </html>
+
+<style is:global>
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/Open_Sans/static/OpenSans_Condensed-Medium.ttf');
+  }
+
+  @font-face {
+    font-family: 'Alfa Slab One';
+    src: url('/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf');
+  }
+
+  .dark-section {
+    background-color: #242424;
+  }
+</style>
