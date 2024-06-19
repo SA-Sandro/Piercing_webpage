@@ -1,0 +1,23 @@
+---
+import WhatsApp from '@/components/my_icons/WhatsApp.astro';
+import './whatsapp-button.css';
+---
+
+<div class="whats-container absolute">
+  <a
+    href="https://api.whatsapp.com/send?phone=34650680724&text=Hola,%20me%20gustaría%20reservar%20una%20cita"
+    class="mailToWha"
+    type="button"
+    target="_blank"
+  >
+    <WhatsApp />
+    <div
+      class="absolute inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-1 p-2 dark:border-gray-900"
+    >
+      1
+    </div>
+    <span class="tooltipText rounded shadow p-1"
+      >¡Envíanos un mensaje y reserva tu cita ya!</span
+    >
+  </a>
+</div>
