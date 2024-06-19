@@ -11,3 +11,9 @@
   transition: 4s ease-in-out;
   display: block;
 }
+
+@media all and (min-width: 64rem) {
+  #menuContent {
+    display: none;
+  }
+}
