@@ -1,0 +1,11 @@
+.image-container {
+  transition: all 1s ease-in-out;
+}
+.image-container:hover {
+  transform: scale(1);
+}
+.works-title {
+  font-family: 'Alfa Slab One';
+  color: #bf9456;
+  font-size: 2rem;
+}
