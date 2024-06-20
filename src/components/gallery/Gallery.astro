@@ -1,6 +1,37 @@
 ---
+import './gallery.css';
+import imagesJSON from '@/data/images.json';
+
+const data = imagesJSON;
 ---
 
-<div class="p-56">
-    <h1>nothing yet</h1>
-</div>
+<section class="m-auto max-w-7xl py-10">
+  <div>
+    <div class="works-title py-4">MIS TRABAJOS</div>
+  </div>
+
+  <div
+    class="w-fit mx-auto grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-5 gap-x-8"
+    uk-lightbox="animation: slide"
+  >
+    {
+      data.map((image, key) => (
+        <>
+          <div class="w-72 bg-white shadow-md rounded-xl duration-300 hover:scale-105 hover:shadow-xl relative">
+            <a
+              id={`image_${key}`}
+              href={image.url}
+              data-caption={`${image.alt}`}
+            >
+              <img
+                class="w-80 h-80 rounded-xl"
+                src={image.url}
+                alt={image.alt}
+              />
+            </a>
+          </div>
+        </>
+      ))
+    }
+  </div>
+</section>
