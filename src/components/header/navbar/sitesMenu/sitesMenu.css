@@ -9,6 +9,7 @@
   overflow: hidden;
   display: inline-block;
   text-decoration: none;
+  color: inherit;
 }
 
 .sites li a:after {
