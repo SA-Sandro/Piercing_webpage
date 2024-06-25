@@ -4,9 +4,13 @@ import About from '@/components/about_me/About.astro';
 import Services from '@/components/my_services/Services.astro';
 import Gallery from '@/components/gallery/Gallery.astro';
 import WhatsAppButton from '@/components/whatsapp_button/WhatsAppButton.astro';
+import Header from '@/components/header/Header.astro';
 ---
 
 <Layout title="Katapiercing || Home">
+  <header slot="header">
+    <Header />
+  </header>
   <main slot="main">
     <section>
       <About />
