@@ -3,10 +3,42 @@
   color: #bf9456;
   font-size: 2rem;
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
+}
+
+.service {
+  font-family: 'Alfa Slab One';
+  color: #bf9456;
+  text-transform: uppercase;
 }
 
 .services-list {
   font-size: 1.3rem;
   font-family: 'Open Sans';
+}
+
+.service-prize {
+  font-size: larger;
+}
+
+.gallery-button {
+  align-items: center;
+  font-family: 'Alfa Slab One';
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  background-color: #d5b981d0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-button a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.gallery-button:hover {
+  transform: translateY(-0.5rem);
 }

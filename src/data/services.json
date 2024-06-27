@@ -1,0 +1,56 @@
+{
+  "services_name": "Piercings Quartier",
+  "services": [
+    {
+      "name": "Oreja",
+      "routeToGallery": "#",
+      "list": [
+        { "name": "Lobe", "price": 25 },
+        { "name": "Upper Lobe", "price": 35 },
+        { "name": "Helix", "price": 30 },
+        { "name": "Forward Helix", "price": 30 },
+        { "name": "Industrial", "price": 35 },
+        { "name": "Daith", "price": 30 },
+        { "name": "Rook", "price": 30 },
+        { "name": "Snug", "price": 30 },
+        { "name": "Tragus", "price": 30 },
+        { "name": "Anti Tragus", "price": 25 },
+        { "name": "Inner Conch", "price": 35 },
+        { "name": "Orbital Conch", "price": 35 }
+      ]
+    },
+    {
+      "name": "Rostro",
+      "routeToGallery": "#",
+      "list": [
+        { "name": "Ceja", "price": 35 },
+        { "name": "Nostril", "price": 25 },
+        { "name": "Septum", "price": 35 },
+        { "name": "Bridge", "price": 35 },
+        { "name": "Tongue", "price": 30 },
+        { "name": "Multi Tongue", "price": 50 },
+        { "name": "Smile", "price": 30 },
+        { "name": "Medusa", "price": 30 },
+        { "name": "Monroe", "price": 35 },
+        { "name": "Madonna", "price": 35 }
+      ]
+    },
+    {
+      "name": "Body",
+      "routeToGallery": "#",
+      "list": [
+        { "name": "Labret", "price": 30 },
+        { "name": "Labret Lateral", "price": 30 },
+        { "name": "Madison Surface", "price": 40 },
+        { "name": "Ashley", "price": 35 },
+        { "name": "Nipple", "price": 40 },
+        { "name": "Eyes Snake", "price": 40 },
+        { "name": "Belly Button", "price": 35 },
+        { "name": "Microdermal", "price": 60 },
+        { "name": "Microdermal Face", "price": 80 },
+        { "name": "Piercing Corset", "price": 120 },
+        { "name": "Cristina", "price": 60 }
+      ]
+    }
+  ]
+}
