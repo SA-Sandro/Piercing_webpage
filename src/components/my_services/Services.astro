@@ -2,7 +2,9 @@
 import './services.css';
 import Image from '@/components/my_images/Image.astro';
 import piercing from 'public/img/coloured_piercing.png';
-import Check from '@/components/my_icons/Check.astro';
+import servicesJson from '@/data/services.json';
+import ServicesList from './services_list/ServicesList.astro';
+
 ---
 
 <div class="services-title">
@@ -17,31 +19,26 @@ import Check from '@/components/my_icons/Check.astro';
     />
   </div>
 </div>
-<div
-  class="services-list grid md:grid-cols-2 sm:grid-cols-1 justify-items-center"
->
-  <div class="mx-10">
-    <Check>
-      <div slot="service-name" class="p-3">Barbería y fotografía</div>
-    </Check>
-    <Check>
-      <div slot="service-name" class="p-3">
-        Diseño de peinados para influencers
-      </div>
-    </Check>
-    <Check>
-      <div slot="service-name" class="p-3">Pelado femenino</div>
-    </Check>
+<div class="services-list grid justify-center lg:grid-cols-3 sm:grid-cols-2">
+  <div class="p-3">
+    <ServicesList
+      services={servicesJson.services.filter(
+        (service) => service.name === 'Oreja'
+      )}
+    />
   </div>
-  <div class="mx-10">
-    <Check>
-      <div slot="service-name" class="p-3">Piercings genitales</div>
-    </Check>
-    <Check>
-      <div slot="service-name" class="p-3">Piercings faciales y de orejas</div>
-    </Check>
-    <Check>
-      <div slot="service-name" class="p-3">Tatuajes a color</div>
-    </Check>
+  <div class="p-3">
+    <ServicesList
+      services={servicesJson.services.filter(
+        (service) => service.name === 'Rostro'
+      )}
+    />
+  </div>
+  <div class="p-3 sm:col-span-2 lg:col-span-1">
+    <ServicesList
+      services={servicesJson.services.filter(
+        (service) => service.name === 'Body'
+      )}
+    />
   </div>
 </div>

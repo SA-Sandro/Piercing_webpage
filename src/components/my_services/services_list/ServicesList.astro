@@ -1,0 +1,28 @@
+---
+import Gallery from '@/components/my_icons/Gallery.astro';
+
+const { services } = Astro.props;
+---
+
+<div class="flex items-center justify-between mx-auto w-72">
+  <div class="py-2 mx-4">
+    <div class="service">{services[0].name}</div>
+  </div>
+  <button class="gallery-button">
+    <a href={services[0].routeToGallery}> Ver galería </a>
+    <Gallery />
+  </button>
+</div>
+
+<div class="flex justify-center my-2">
+  <ul>
+    {
+      services[0].list.map((servicio: any) => (
+        <li class="flex">
+          <div class="min-w-36">{servicio.name}</div>
+          <div class="services-prize ml-16">{servicio.price}€</div>
+        </li>
+      ))
+    }
+  </ul>
+</div>
