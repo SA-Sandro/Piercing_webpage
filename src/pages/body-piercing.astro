@@ -1,0 +1,23 @@
+---
+import Gallery from '@/components/gallery/Gallery.astro';
+import Navbar from '@/components/header/navbar/Navbar.astro';
+import SubHeader from '@/components/sub_header/SubHeader.astro';
+import Layout from '@/layouts/Layout.astro';
+---
+
+<Layout title="Body-piercing || Galería">
+  <header slot="header">
+    <Navbar />
+    <SubHeader>
+      <div slot="title" class="page-title">Piercing por el cuerpo</div>
+      <div slot="description" class="page-description w-72">
+        El piercing en la lengua suele hacerse por simple estética o por placer
+        sexual. Al principio genera una importante inflamación, pero al mismo
+        tiempo es uno de los más rápidos en cicatrizar.
+      </div>
+    </SubHeader>
+  </header>
+  <main slot="main">
+    <Gallery />
+  </main>
+</Layout>
