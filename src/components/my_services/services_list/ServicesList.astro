@@ -8,10 +8,7 @@ const { services } = Astro.props;
   <div class="py-2 mx-4">
     <div class="service">{services[0].name}</div>
   </div>
-  <button class="gallery-button">
-    <a href={services[0].routeToGallery}> Ver galería </a>
-    <Gallery />
-  </button>
+    <a class="gallery-button" href={services[0].routeToGallery}> Ver galería <Gallery/> </a>
 </div>
 
 <div class="flex justify-center my-2">

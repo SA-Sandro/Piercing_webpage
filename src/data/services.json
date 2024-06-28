@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "Oreja",
-      "routeToGallery": "#",
+      "routeToGallery": "/ear-piercing",
       "list": [
         { "name": "Lobe", "price": 25 },
         { "name": "Upper Lobe", "price": 35 },
@@ -21,7 +21,7 @@
     },
     {
       "name": "Rostro",
-      "routeToGallery": "#",
+      "routeToGallery": "/face-piercing",
       "list": [
         { "name": "Ceja", "price": 35 },
         { "name": "Nostril", "price": 25 },
@@ -37,7 +37,7 @@
     },
     {
       "name": "Body",
-      "routeToGallery": "#",
+      "routeToGallery": "/body-piercing",
       "list": [
         { "name": "Labret", "price": 30 },
         { "name": "Labret Lateral", "price": 30 },
