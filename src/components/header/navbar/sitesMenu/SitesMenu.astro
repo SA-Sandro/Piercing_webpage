@@ -1,4 +1,5 @@
 ---
+import Drop from '@/components/my_icons/Drop.astro';
 import './sitesMenu.css';
 ---
 
@@ -12,7 +13,20 @@ import './sitesMenu.css';
     <a href="/#services"> Servicios </a>
   </li>
   <li>
-    <a href="#"> ¿Por qué nosotros? </a>
+    <a type="button">
+      <div class="flex items-center">
+        <p class="mr-1">Piercings</p>
+        <Drop />
+      </div>
+    </a>
+    <div uk-dropdown="offset: 10">
+      <ul class="uk-nav uk-dropdown-nav">
+        <li><a href="/body-piercing"> Body Piercing </a></li>
+        <li><a href="/ear-piercing"> Piercing en la oreja</a></li>
+        <li><a href="/face-piercing"> Piercing de cara</a></li>
+        <li><a href="/genital-piercing"> Piercing genitales</a></li>
+      </ul>
+    </div>
   </li>
   <li>
     <a href="#"> Testimonios </a>
