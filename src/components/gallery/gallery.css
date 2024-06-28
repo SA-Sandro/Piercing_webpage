@@ -4,8 +4,14 @@
 .image-container:hover {
   transform: scale(1);
 }
-.works-title {
+
+.title-container {
+  text-align: center;
+}
+
+.title-container div {
   font-family: 'Alfa Slab One';
   color: #bf9456;
   font-size: 2rem;
+  font-weight: lighter;
 }
