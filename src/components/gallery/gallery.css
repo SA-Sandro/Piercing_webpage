@@ -11,7 +11,13 @@
 
 .title-container div {
   font-family: 'Alfa Slab One';
-  font-size: 2rem;
+  font-size: 3rem;
   color: #d5b981;
   font-weight: lighter;
+}
+
+@media screen and (max-width: 31.25rem) {
+  .title-container div {
+    font-size: 10vw;
+  }
 }

@@ -1,6 +1,5 @@
 .reviews-title {
   font-family: 'Alfa Slab One';
-  font-size: 2rem;
   color: #d5b981;
   text-align: center;
   font-size: 3rem;
@@ -50,7 +49,10 @@
   margin: 0;
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width: 31.25rem) {
+  .reviews-title {
+    font-size: 10vw;
+  }
   .snippet-container {
     padding-right: 1rem;
     padding-left: 1rem;

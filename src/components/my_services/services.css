@@ -1,6 +1,6 @@
 .services-title {
   font-family: 'Alfa Slab One';
-  font-size: 2rem;
+  font-size: 3rem;
   color: #d5b981;
   text-align: center;
   padding: 1rem 0;
@@ -41,4 +41,10 @@
 
 .gallery-button:hover {
   transform: translateY(-0.5rem);
+}
+
+@media screen and (max-width: 31.25rem) {
+  .services-title {
+    font-size: 10vw;
+  }
 }
