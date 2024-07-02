@@ -1,0 +1,58 @@
+.reviews-title {
+  font-family: 'Alfa Slab One';
+  font-size: 2rem;
+  color: #d5b981;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.section-background {
+  background-image: url(img/background-testimonials.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card {
+  background-color: #f4f4f4;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.reviews-anchor {
+  font-family: 'Alfa Slab One';
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #d5b981;
+  transition: color 0.1s ease-in-out;
+}
+
+.reviews-anchor:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.rating_string {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.slide-icon-prev {
+  color: #d5b981 !important;
+  margin: 0;
+}
+
+.slide-icon-next {
+  color: #d5b981 !important;
+  margin: 0;
+}
+
+@media screen and (max-width:450px) {
+  .snippet-container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}

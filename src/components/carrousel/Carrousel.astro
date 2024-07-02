@@ -1,0 +1,81 @@
+---
+import reviewsJson from '@/data/reviews.json';
+import Image from '@/components/my_images/Image.astro';
+import './carrousel.css';
+---
+
+<div class="section-background">
+  <div class="reviews-title p-3">RESEÑAS</div>
+  <div class="text-center text-white flex items-center justify-center">
+    <div class="mx-3">
+      <Image src="img/google_logo.png" alt="Logo de google" width={30} />
+    </div>
+    <div>
+      <div class="rating_string">Excelente</div>
+      <Image
+        class="m-auto"
+        src="img/five_starts.png"
+        alt="5 estrellas"
+        width={100}
+      />
+    </div>
+  </div>
+  <div class="text-white text-center pb-7">
+    Basado en {reviewsJson.location_info.totalReviews}
+  </div>
+  <div class="uk-position-relative px-10">
+    <div
+      class="uk-visible-toggle uk-light max-w-5xl m-auto"
+      uk-slider="sets: true"
+    >
+      <div class="uk-slider-items uk-child-width-1-2@m">
+        {
+          reviewsJson.reviews.map((review) => (
+            <div class=" mx-1 my-10 card max-h-80  overflow-scroll cursor-grabbing ">
+              <div class="flex justify-center select-none p-5">
+                <Image
+                  src={review.thumbnail}
+                  width={40}
+                  alt="usuario"
+                  class="mr-3"
+                />
+                <div>
+                  <p class="text-black">{review.name}</p>
+                  <p class="text-gray-500">{review.duration}</p>
+                </div>
+              </div>
+              <div class="snippet-container flex flex-col justify-center text-justify select-none px-10">
+                <div class="m-auto p-2 ">
+                  {review.rating === '5.0' ? (
+                    <Image
+                      src="img/five_starts.png"
+                      alt="5 estrellas"
+                      width={120}
+                    />
+                  ) : null}
+                </div>
+                <p class="italic text-black">{review.snippet}</p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+      <a
+        class="slide-icon-prev uk-position-center-left uk-position-small"
+        uk-slidenav-previous
+        uk-slider-item="previous"></a>
+      <a
+        class="slide-icon-next uk-position-center-right uk-margin-medium-left uk-position-small"
+        uk-slidenav-next
+        uk-slider-item="next"></a>
+    </div>
+  </div>
+  <div class="text-center p-3">
+    <a
+      target="_blank"
+      class="reviews-anchor"
+      href="https://www.google.com/maps/place/Templo+Piercing+y+Tattoo/@36.7249744,-4.4177848,16z/data=!3m1!4b1!4m6!3m5!1s0xd72f7a8e990f5c1:0xde8d0b5e571ebc91!8m2!3d36.7249744!4d-4.4177848!16s%2Fg%2F11vzbzh4v5?hl=es&entry=ttu"
+      >Ver más reseñas</a
+    >
+  </div>
+</div>
