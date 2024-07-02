@@ -1,0 +1,74 @@
+.shedule-title {
+  font-family: 'Alfa Slab One';
+  font-size: 3rem;
+  color: #d5b981;
+}
+
+.cards-container {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(6, minmax(9rem, 1fr));
+}
+
+.cards-container div {
+  cursor: pointer;
+  background-color: #242424;
+  padding: 2rem;
+  margin: 0.3rem;
+  box-shadow: 0.9rem 1rem 1.25rem 0.188rem rgba(0, 0, 0, 0.22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+.cards-container div:hover {
+  background-color: #d5b981;
+}
+
+.cards-container div:hover p {
+  color: white;
+}
+
+.cards-container div p {
+  font-size: 1.5rem;
+  font-family: 'Alfa Slab One';
+  color: #d5b981;
+  text-transform: uppercase;
+}
+.sunday-container {
+  font-family: 'Open sans';
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #d5b981;
+  transition: color 0.1s ease-in-out;
+}
+
+.reviews-anchor:hover {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 67.5rem) {
+  .cards-container {
+    grid-template-columns: repeat(3, minmax(8rem, 1fr));
+  }
+}
+
+@media screen and (max-width: 31.25rem) {
+  .shedule-title {
+    font-size: 10vw;
+  }
+}
+
+@media screen and (max-width: 26.563rem) {
+  .cards-container {
+    padding: 1rem;
+    grid-template-columns: repeat(2, minmax(5rem, 1fr));
+  }
+}
