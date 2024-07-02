@@ -42,3 +42,9 @@
 .gallery-button:hover {
   transform: translateY(-0.5rem);
 }
+
+@media screen and (max-width: 31.25rem) {
+  .services-title {
+    font-size: 10vw;
+  }
+}
