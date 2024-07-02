@@ -23,11 +23,8 @@ import './carrousel.css';
   <div class="text-white text-center pb-7">
     Basado en {reviewsJson.location_info.totalReviews}
   </div>
-  <div class="uk-position-relative px-10">
-    <div
-      class="uk-visible-toggle uk-light max-w-5xl m-auto"
-      uk-slider="sets: true"
-    >
+  <div class="px-10 max-w-5xl m-auto uk-position-relative">
+    <div class="uk-visible-toggle uk-light" uk-slider="sets: true">
       <div class="uk-slider-items uk-child-width-1-2@m">
         {
           reviewsJson.reviews.map((review) => (
@@ -63,11 +60,11 @@ import './carrousel.css';
       <a
         class="slide-icon-prev uk-position-center-left uk-position-small"
         uk-slidenav-previous
-        uk-slider-item="previous" />
+        uk-slider-item="previous"></a>
       <a
         class="slide-icon-next uk-position-center-right uk-margin-medium-left uk-position-small"
         uk-slidenav-next
-        uk-slider-item="next" />
+        uk-slider-item="next"></a>
     </div>
   </div>
   <div class="text-center pb-10">
