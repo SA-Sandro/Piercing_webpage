@@ -1,0 +1,44 @@
+[
+  {
+    "id": 0,
+    "url": "public/img/img1.jpg",
+    "alt": "Hola soy la primera imagen",
+    "explicitContent": false
+  },
+  {
+    "id": 1,
+    "url": "public/img/imagen_sobremi_2.jpg",
+    "alt": "Hola soy la segunda imagen",
+    "explicitContent": false
+  },
+  {
+    "id": 2,
+    "url": "public/img/img3.jpg",
+    "alt": "Hola soy la tercera imagen",
+    "explicitContent": false
+  },
+  {
+    "id": 3,
+    "url": "public/img/img4.jpg",
+    "alt": "Hola soy la cuarta imagen",
+    "explicitContent": false
+  },
+  {
+    "id": 4,
+    "url": "public/img/img5.jpg",
+    "alt": "Hola soy la quinta imagen",
+    "explicitContent": false
+  },
+  {
+    "id": 5,
+    "url": "public/img/img6.jpg",
+    "alt": "Hola soy la sexta imagen",
+    "explicitContent": false
+  },
+  {
+    "id": 6,
+    "url": "public/img/imgPrueba.png",
+    "alt": "Hola soy la septima imagen",
+    "explicitContent": false
+  }
+]

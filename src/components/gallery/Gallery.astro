@@ -1,8 +1,13 @@
 ---
+import ImageComponent from '@/components/my_images/Image.astro';
 import './gallery.css';
-import imagesJSON from '@/data/images.json';
+import type { Image } from '@/lib/types/index';
 
-const data = imagesJSON;
+interface Props {
+  images: Array<Image>;
+}
+
+const { images } = Astro.props;
 ---
 
 <section class="m-auto max-w-7xl mb-12">
@@ -15,7 +20,7 @@ const data = imagesJSON;
     uk-lightbox="animation: slide"
   >
     {
-      data.map((image, key) => (
+      images.map((image: Image, key: number) => (
         <>
           <div class="w-72 bg-white shadow-md rounded-xl duration-300 hover:scale-105 hover:shadow-xl relative">
             <a
@@ -23,7 +28,7 @@ const data = imagesJSON;
               href={image.url}
               data-caption={`${image.alt}`}
             >
-              <img
+              <ImageComponent
                 class="w-80 h-80 rounded-xl"
                 src={image.url}
                 alt={image.alt}

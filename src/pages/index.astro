@@ -6,6 +6,9 @@ import Gallery from '@/components/gallery/Gallery.astro';
 import Header from '@/components/header/Header.astro';
 import Carrousel from '@/components/carrousel/Carrousel.astro';
 import Shedule from '@/components/shedule/Shedule.astro';
+import earImagesJSON from '@/data/images_info/earImages.json';
+
+const earImages = earImagesJSON;
 ---
 
 <Layout title="Katapiercing || Home">
@@ -22,7 +25,7 @@ import Shedule from '@/components/shedule/Shedule.astro';
       </div>
     </section>
     <section>
-      <Gallery />
+      <Gallery images={earImages} />
     </section>
     <section uk-parallax="opacity: 0,7" id="testimonials">
       <Carrousel />
