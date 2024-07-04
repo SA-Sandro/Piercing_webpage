@@ -3,9 +3,12 @@ import Gallery from '@/components/gallery/Gallery.astro';
 import Navbar from '@/components/header/navbar/Navbar.astro';
 import SubHeader from '@/components/sub_header/SubHeader.astro';
 import Layout from '@/layouts/Layout.astro';
+import faceImagesJSON from '@/data/images_info/faceImages.json';
+
+const faceImages = faceImagesJSON;
 ---
 
-<Layout title="Rostro-piercing || Galería">
+<Layout title="Piercing-rostro || Galería">
   <header slot="header">
     <Navbar />
     <SubHeader>
@@ -18,6 +21,6 @@ import Layout from '@/layouts/Layout.astro';
     </SubHeader>
   </header>
   <main slot="main">
-    <Gallery />
+    <Gallery images={faceImages} />
   </main>
 </Layout>

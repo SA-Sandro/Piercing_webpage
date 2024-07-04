@@ -31,9 +31,14 @@ const { title } = Astro.props;
     <footer>
       <Footer />
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/js/uikit.min.js"
+    <script
+      is:inline
+      defer
+      src="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/js/uikit.min.js"
     ></script>
     <script
+      is:inline
+      defer
       src="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/js/uikit-icons.min.js"
     ></script>
     <style is:global>
@@ -46,7 +51,8 @@ const { title } = Astro.props;
         font-family: 'Alfa Slab One';
         src: url('/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf');
       }
-      html{
+
+      html {
         scroll-behavior: smooth;
       }
       .dark-section {

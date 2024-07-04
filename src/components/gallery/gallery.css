@@ -16,6 +16,33 @@
   font-weight: lighter;
 }
 
+.blurred-image {
+  filter: blur(1.5rem);
+}
+
+.button-container {
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+.button-container button {
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  background-color: #0d0a09;
+  color: white;
+  font-family: 'Open sans';
+  opacity: 0.8;
+}
+
+.button-container button:hover {
+  opacity: 1;
+}
+
 @media screen and (max-width: 31.25rem) {
   .title-container div {
     font-size: 10vw;
