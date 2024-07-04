@@ -1,12 +1,12 @@
 ---
 import ImageComponent from '@/components/my_images/Image.astro';
+import Warning from '@/components/warning_modal/Warning.astro';
 import './gallery.css';
 import type { Image } from '@/lib/types/index';
 
 interface Props {
   images: Array<Image>;
 }
-
 const { images } = Astro.props;
 ---
 
@@ -21,22 +21,80 @@ const { images } = Astro.props;
   >
     {
       images.map((image: Image, key: number) => (
-        <>
-          <div class="w-72 bg-white shadow-md rounded-xl duration-300 hover:scale-105 hover:shadow-xl relative">
-            <a
-              id={`image_${key}`}
-              href={image.url}
-              data-caption={`${image.alt}`}
+        <div
+          class:list={[
+            'w-72 relative',
+            {
+              'bg-white shadow-md rounded-xl duration-300 hover:scale-105 hover:shadow-xl':
+                image.explicitContent === false
+            }
+          ]}
+        >
+          <a
+            id={`image_${key}`}
+            href={image.url}
+            data-caption={`${image.alt}`}
+            class:list={[
+              {
+                'explicit-image': image.explicitContent
+              }
+            ]}
+          >
+            <ImageComponent
+              class={
+                image.explicitContent === true
+                  ? 'blurred-image w-80 h-80 rounded-xl'
+                  : 'w-80 h-80 rounded-xl'
+              }
+              src={image.url}
+              alt={image.alt}
+            />
+          </a>
+          <div
+            class={
+              image.explicitContent === true ? 'button-container' : 'hidden'
+            }
+          >
+            <button
+              type="button"
+              uk-toggle="target: #modal-warning"
+              class="show-image rounded-full"
+              data-image-id={`image_${key}`}
             >
-              <ImageComponent
-                class="w-80 h-80 rounded-xl"
-                src={image.url}
-                alt={image.alt}
-              />
-            </a>
+              Ver imagen
+            </button>
           </div>
-        </>
+        </div>
       ))
     }
   </div>
+
+  <Warning />
 </section>
+
+<script is:inline defer>
+  const openLightBox = (event) => {
+    const imageId = event.target.getAttribute('data-image-id');
+    const explicitImageLink = document.getElementById(imageId);
+    if (explicitImageLink) {
+      explicitImageLink.click();
+    }
+  };
+
+  const setAttributeToContinueBtn = () => {
+    showImageButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        continueBtn.setAttribute(
+          'data-image-id',
+          btn.getAttribute('data-image-id')
+        );
+      });
+    });
+  };
+
+  const continueBtn = document.querySelector('.continue-btn');
+  continueBtn.addEventListener('click', openLightBox);
+
+  const showImageButtons = document.querySelectorAll('.show-image');
+  setAttributeToContinueBtn();
+</script>
