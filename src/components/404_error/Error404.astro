@@ -1,32 +1,32 @@
 ---
-import Image from '../my_images/Image.astro';
-import error404 from './error404.css';
-import logoProvisional from 'public/img/logo_provisional.png';
+import Image from '@/components/my_images/Image.astro';
+import Back from '@/components/my_icons/Back.astro';
+import './error.css';
 ---
 
-<div class="h-screen bg-gray-100 flex flex-col items-center py-40 px-20">
+<div class="sm:bg-white sm:shadow sm:m-10 sm:p-10 error-container">
   <div>
-    <Image
-      src={logoProvisional.src}
-      alt="Logo de la empresa"
-      height={200}
-      width={200}
-    />
+    <Image src="img/404-error.png" alt="error 404" width={270} class="p-5" />
   </div>
   <div
-    class="container flex flex-col md:flex-row items-center justify-center px-5 text-gray-700"
+    class="flex flex-col md:flex-row items-center justify-center p-7 text-gray-700"
   >
     <div class="max-w-md m-auto">
-      <div class="text-5xl text-red-500 font-dark font-bold text-center">
-        404
+      <div class="text-5xl text-[#EB5B00] font-dark font-bold text-center">
+        Error 404
       </div>
-      <p class="text-2xl md:text-3xl font-light leading-normal">
+      <p class="text-2xl md:text-3xl font-light leading-normal mt-4">
         Lamentamos comunicarle que no pudimos encontrar la página especificada
       </p>
-      <p class="mt-2 mb-8">
-        Pero no te preocupes, puedes volver a la página inicial y ver más
-        información
+      <p class="mt-4 mb-8">
+        Pero no te preocupes, puedes volver a la página inicial y continuar con
+        su navegación
       </p>
+      <div class="text-center">
+        <a slot="icon" type="button" class="back-anchor" href="index.html"
+          ><Back />Volver
+        </a>
+      </div>
     </div>
   </div>
 </div>
