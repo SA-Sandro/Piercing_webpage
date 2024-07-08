@@ -1,7 +1,5 @@
 ---
 import './about.css';
-import image1 from 'public/img/imagen_sobremi_1.jpg';
-import image2 from 'public/img/imagen_sobremi_2.jpg';
 import Image from '@/components/my_images/Image.astro';
 ---
 
@@ -22,9 +20,17 @@ import Image from '@/components/my_images/Image.astro';
     </div>
     <div class="flex justify-center">
       <div class="relative">
-        <Image class="image1" src={image1.src} alt={'Realización piercing'} />
+        <Image
+          class="image1"
+          src="img/imagen_sobremi_1.jpg"
+          alt={'Realización piercing'}
+        />
         <div class="image2-container">
-          <Image class="image2" src={image2.src} alt={'Anillador'} />
+          <Image
+            class="image2"
+            src="img/imagen_sobremi_2.jpg"
+            alt={'Anillador'}
+          />
         </div>
       </div>
     </div>
