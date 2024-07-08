@@ -1,14 +1,10 @@
 ---
-import Layout from '@/layouts/Layout.astro';
+import ErrorLayout from '@/layouts/ErrorLayout.astro';
 import Error404 from '@/components/404_error/Error404.astro';
-import Navbar from '@/components/header/navbar/Navbar.astro';
 ---
 
-<Layout title="404 not found">
-  <header slot="header">
-    <Navbar />
-  </header>
-  <div slot="main">
+<ErrorLayout title="404 Error">
+  <div slot="main" class="h-screen error-container">
     <Error404 />
   </div>
-</Layout>
+</ErrorLayout>

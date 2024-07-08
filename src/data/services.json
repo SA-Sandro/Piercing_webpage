@@ -48,8 +48,7 @@
         { "name": "Belly Button", "price": 35 },
         { "name": "Microdermal", "price": 60 },
         { "name": "Microdermal Face", "price": 80 },
-        { "name": "Piercing Corset", "price": 120 },
-        { "name": "Cristina", "price": 60 }
+        { "name": "Piercing Corset", "price": 120 }
       ]
     }
   ]
