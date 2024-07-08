@@ -16,13 +16,9 @@ const { title } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
+    <script src="uikit/dist/js/uikit.min.js"></script>
+    <script src="uikit/dist/css/uikit.min.css"></script>
     <ViewTransitions />
-
-    <!-- UIKIT -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/css/uikit.min.css"
-    />
   </head>
   <body>
     <slot name="header" />
@@ -31,16 +27,7 @@ const { title } = Astro.props;
     <footer>
       <Footer />
     </footer>
-    <script
-      is:inline
-      defer
-      src="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/js/uikit.min.js"
-    ></script>
-    <script
-      is:inline
-      defer
-      src="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/js/uikit-icons.min.js"
-    ></script>
+
     <style is:global>
       @font-face {
         font-family: 'Open Sans';
