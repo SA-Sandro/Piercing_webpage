@@ -69,33 +69,4 @@ const { images } = Astro.props;
 </section>
 <Warning />
 
-<script is:inline defer>
-  document.addEventListener('DOMContentLoaded', () => {
-    const openLightBox = (event) => {
-      const imageId = event.target.getAttribute('data-image-id');
-      const explicitImageLink = document.getElementById(imageId);
-      if (explicitImageLink) {
-        explicitImageLink.click();
-      }
-    };
 
-    const hiddenInput = document.querySelector('.hidden-input');
-    if (hiddenInput) {
-      const event = new MouseEvent('click', {
-        view: window,
-        bubbles: true,
-        cancelable: true
-      });
-      hiddenInput.dispatchEvent(event);
-    }
-
-    const showImageButtons = document.querySelectorAll('.show-image');
-    showImageButtons.forEach((imageButton) => {
-      imageButton.addEventListener('click', openLightBox);
-    });
-
-    document.querySelector('.back-btn').addEventListener('click', () => {
-      location.replace('index.html');
-    });
-  });
-</script>

@@ -54,19 +54,19 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 67.5rem) {
+@media (width < 67.5rem) {
   .cards-container {
     grid-template-columns: repeat(3, minmax(8rem, 1fr));
   }
 }
 
-@media screen and (max-width: 31.25rem) {
+@media (width < 31.25rem) {
   .shedule-title {
     font-size: 10vw;
   }
 }
 
-@media screen and (max-width: 26.563rem) {
+@media (width < 26.563rem) {
   .cards-container {
     padding: 1rem;
     grid-template-columns: repeat(2, minmax(5rem, 1fr));

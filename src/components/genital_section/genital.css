@@ -15,7 +15,7 @@
 }
 
 .genital-list {
-  margin: 0 5rem;
+  margin-left: 5rem;
 }
 
 .genital-list ul li {
@@ -55,4 +55,11 @@
 
 .redirect-genital-gallery:hover:after {
   left: 0;
+}
+
+@media (width < 48rem) {
+  .genital-list {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 }

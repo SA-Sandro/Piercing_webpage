@@ -21,4 +21,7 @@
   .main-container {
     background-position-x: -20rem;
   }
+  .subt-text {
+    font-size: 2.4rem;
+  }
 }

@@ -38,7 +38,7 @@
   left: 0;
 }
 
-@media (width <=37.5rem) {
+@media (width <= 37.5rem) {
   .error-container {
     flex-direction: column;
   }

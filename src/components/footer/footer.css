@@ -4,10 +4,6 @@
   padding: 0 2.5rem;
   justify-content: center;
 }
-/* .social-media div:hover {
-  transition: background-color 0.3s ease-in-out;
-  background-color: #bf9456;
-} */
 
 .divide-line {
   margin: auto;
@@ -38,7 +34,20 @@
   border: 0.3rem white solid;
 }
 
-@media (width<=31.25rem) {
+@media (width < 45.625rem) {
+  .map-container iframe {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (width < 40rem) {
+  .social-media {
+    margin-top: 1rem;
+  }
+}
+
+@media (width <= 31.25rem) {
   .map-container iframe {
     width: 18.75rem;
     height: 18.75rem;
