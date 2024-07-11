@@ -20,6 +20,7 @@
 
 .back-anchor:hover {
   text-decoration: none;
+  color: #d5b981;
 }
 
 .back-anchor:after {
