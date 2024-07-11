@@ -2,6 +2,12 @@
   box-shadow: 0 0 0 0.1rem;
 }
 
+.company-name {
+  font-family: 'Alfa Slab One';
+  font-size: 1.1rem;
+  color: #ffe09ed0;
+}
+
 .logo {
   width: 3rem;
   height: 3rem;

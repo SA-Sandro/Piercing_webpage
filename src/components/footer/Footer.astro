@@ -1,7 +1,6 @@
 ---
 import './footer.css';
 import Image from '@/components/my_images/Image.astro';
-import logo from 'public/img/logo_provisional.png';
 import Instagram from '@/components/my_icons/Instagram.astro';
 import Tiktok from '@/components/my_icons/Tiktok.astro';
 import Location from '@/components/my_icons/Location.astro';
@@ -13,7 +12,12 @@ import Mail from '@/components/my_icons/Mail.astro';
   <section class="flex justify-center p-4">
     <div class="p-3 flex items-center justify-center flex-col sm:flex-row">
       <div class="flex justify-center">
-        <Image src={logo.src} alt="logotipo" width={150} height={100} />
+        <Image
+          src="img/Katapiercing_logo.png"
+          alt="Logo de la empresa"
+          width={150}
+          height={100}
+        />
       </div>
       <div class="social-media flex-col">
         <div class="rounded-full mx-2 cursor-pointer">

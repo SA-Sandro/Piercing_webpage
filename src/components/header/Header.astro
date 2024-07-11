@@ -1,12 +1,22 @@
 ---
 import Navbar from './navbar/Navbar.astro';
+import Image from '@/components/my_images/Image.astro';
 import './header.css';
 ---
 
 <div class="main-container">
   <Navbar />
-  <div class="pt-32">
-    <div class="main-text text-center text-white">ESLOGAN/TITULO</div>
-    <div class="subt-text text-center">Añadir un subtítulo</div>
+  <div class="py-28">
+    <div class="flex justify-center items-cente">
+      <Image
+        src="img/Katapiercing_logo.png"
+        alt="Logo de la empresa"
+        width={250}
+        class="bg-white rounded-full px-4"
+      />
+    </div>
+    <div class="subt-text text-center py-10">
+      Professional Body Piercing
+    </div>
   </div>
 </div>
