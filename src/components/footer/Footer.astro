@@ -1,27 +1,36 @@
 ---
 import './footer.css';
 import Image from '@/components/my_images/Image.astro';
-import logo from 'public/img/logo_provisional.png';
 import Instagram from '@/components/my_icons/Instagram.astro';
 import Tiktok from '@/components/my_icons/Tiktok.astro';
 import Location from '@/components/my_icons/Location.astro';
 import Phone from '@/components/my_icons/Phone.astro';
 import Mail from '@/components/my_icons/Mail.astro';
-import SitesMenu from '@/components/header/navbar/sitesMenu/SitesMenu.astro';
 ---
 
 <div class="m-auto max-w-5xl">
   <section class="flex justify-center p-4">
-    <div class="p-3 flex flex-col justify-center">
+    <div class="p-3 flex items-center justify-center flex-col sm:flex-row">
       <div class="flex justify-center">
-        <Image src={logo.src} alt="logotipo" width={150} height={100} />
+        <Image
+          src="img/Katapiercing_logo.png"
+          alt="Logo de la empresa"
+          width={150}
+          class="bg-white rounded-full px-4 py-2"
+        />
       </div>
-      <div class="social-media">
-        <div class="rounded-full mx-2">
-          <a href="#"><Instagram /></a>
+      <div class="social-media flex-col">
+        <div class="rounded-full mx-2 cursor-pointer">
+          <a
+            class="flex items-center text-white hover:no-underline hover:text-[#d5b981] transition-colors"
+            href="#"><Instagram /><span class="ml-1">@Katapiercing</span></a
+          >
         </div>
-        <div class="rounded-full mx-2">
-          <a href="#"><Tiktok /></a>
+        <div class="rounded-full mx-2 cursor-pointer my-2">
+          <a
+            class="flex items-center text-white hover:no-underline hover:text-[#d5b981]"
+            href="#"><Tiktok /><span class="ml-1">@Katapiercing</span></a
+          >
         </div>
       </div>
     </div>
@@ -43,14 +52,32 @@ import SitesMenu from '@/components/header/navbar/sitesMenu/SitesMenu.astro';
             <p slot="text-icon">876 87 8 7 65</p>
           </Phone>
         </div>
-        <div class="sites-container mx-3">
-          <SitesMenu />
+        <div class="map-container m-3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.6922392996535!2d-4.417484396294514!3d36.72441541418693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7a8e990f5c1%3A0xde8d0b5e571ebc91!2sTemplo%20Piercing%20y%20Tattoo!5e1!3m2!1ses!2ses!4v1720456210682!5m2!1ses!2ses"
+            width="400"
+            height="350"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
-    <div class="copy-size text-center p-4 bg-dark text-white">
+    <div
+      class="copy-size text-center p-4 bg-dark text-white flex items-center justify-center"
+    >
       © 2024 Copyright: Sandro Suárez Aranda
+      <a
+        href="https://www.linkedin.com/in/sandro-su%C3%A1rez-aranda-76539a1b7/"
+        target="_blank"
+      >
+        <Image
+          src="img/linkedin_logo.png"
+          alt="logo de linkedin"
+          width={25}
+          class="mx-2"
+        />
+      </a>
     </div>
-    <!-- Copyright -->
   </section>
 </div>

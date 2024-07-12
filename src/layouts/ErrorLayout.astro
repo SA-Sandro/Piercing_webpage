@@ -1,0 +1,52 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="bg-gray-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <ViewTransitions />
+
+    <!-- UIKIT -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/css/uikit.min.css"
+    />
+  </head>
+  <body>
+    <slot name="main" />
+    <script
+      is:inline
+      defer
+      src="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/js/uikit.min.js"
+    ></script>
+    <script
+      is:inline
+      defer
+      src="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/js/uikit-icons.min.js"
+    ></script>
+    <style is:global>
+      @font-face {
+        font-family: 'Open Sans';
+        src: url('/fonts/Open_Sans/static/OpenSans_Condensed-Medium.ttf');
+      }
+      @font-face {
+        font-family: 'Alfa Slab One';
+        src: url('/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf');
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </body>
+</html>

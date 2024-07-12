@@ -1,9 +1,8 @@
 ---
-import logo from 'public/img/logo_provisional.png';
-import './navbar.css';
 import SitesMenu from '@/components/header/navbar/sitesMenu/SitesMenu.astro';
 import Burguer from '@/components/my_icons/Burguer.astro';
 import Image from '@/components/my_images/Image.astro';
+import './navbar.css';
 ---
 
 <nav
@@ -14,8 +13,12 @@ import Image from '@/components/my_images/Image.astro';
       class="flex items-center text-white hover:no-underline hover:text-inherit"
       href="index.html"
     >
-      <Image src={logo.src} width={70} height={70} alt="logo" />
-      <span class="company-name">Katapiercing</span>
+      <Image
+        src="img/Katapiercing_logo.png"
+        width={70}
+        alt="logo"
+        class="bg-white rounded-full px-1"
+      />
     </a>
     <div class="hidden lg:block">
       <SitesMenu />

@@ -1,8 +1,8 @@
 ---
 import ImageComponent from '@/components/my_images/Image.astro';
 import Warning from '@/components/warning_modal/Warning.astro';
-import './gallery.css';
 import type { Image } from '@/lib/types/index';
+import './gallery.css';
 
 interface Props {
   images: Array<Image>;
@@ -42,7 +42,7 @@ const { images } = Astro.props;
           >
             <ImageComponent
               class={
-                image.explicitContent === true
+                image.explicitContent
                   ? 'blurred-image w-80 h-80 rounded-xl'
                   : 'w-80 h-80 rounded-xl'
               }
@@ -50,14 +50,9 @@ const { images } = Astro.props;
               alt={image.alt}
             />
           </a>
-          <div
-            class={
-              image.explicitContent === true ? 'button-container' : 'hidden'
-            }
-          >
+          <div class={image.explicitContent ? 'button-container' : 'hidden'}>
             <button
               type="button"
-              uk-toggle="target: #modal-warning"
               class="show-image rounded-full"
               data-image-id={`image_${key}`}
             >
@@ -68,33 +63,10 @@ const { images } = Astro.props;
       ))
     }
   </div>
-
-  <Warning />
+  <div class="modal-container hidden" uk-toggle="target: #modal-warning">
+    <button type="button" class="hidden-input"></button>
+  </div>
 </section>
+<Warning />
 
-<script is:inline defer>
-  const openLightBox = (event) => {
-    const imageId = event.target.getAttribute('data-image-id');
-    const explicitImageLink = document.getElementById(imageId);
-    if (explicitImageLink) {
-      explicitImageLink.click();
-    }
-  };
 
-  const setAttributeToContinueBtn = () => {
-    showImageButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        continueBtn.setAttribute(
-          'data-image-id',
-          btn.getAttribute('data-image-id')
-        );
-      });
-    });
-  };
-
-  const continueBtn = document.querySelector('.continue-btn');
-  continueBtn.addEventListener('click', openLightBox);
-
-  const showImageButtons = document.querySelectorAll('.show-image');
-  setAttributeToContinueBtn();
-</script>

@@ -1,31 +1,43 @@
-<div id="modal-warning" uk-modal>
-  <div class="uk-modal-dialog uk-modal-body">
-    <h2 class="uk-modal-title">Advertencia: contenido explícito</h2>
-    <p class="mt-4">
-      Antes de continuar, queremos informarle que las imágenes que estás a punto
-      de visualizar contienen material explícito que puede no ser adecuado para
-      todos los públicos.
+---
+import Image from '@/components/my_images/Image.astro';
+---
+
+<div id="modal-warning" uk-modal bg-close="false">
+  <div class="uk-modal-dialog uk-modal-body text-justify">
+    <div class="flex justify-center">
+      <Image
+        src="img/Katapiercing_logo.png"
+        alt="Logo de la empresa"
+        width={230}
+      />
+    </div>
+    <h2 class="uk-modal-title mt-0 text-center">
+      Aviso de Contenido Restringido
+    </h2>
+    <p class="mt-4 text-xl">
+      Este sitio web contiene material gráfico de índole sexual y está
+      estrictamente restringido a personas mayores de 18 años. El contenido aquí
+      presente no es apto para menores de edad y puede ser considerado
+      inapropiado para algunos usuarios.
     </p>
-    <p class="my-5">
-      Esta advertencia se ofrece para asegurar que estás completamente informado
-      antes de proceder. Si prefieres no ver este tipo de contenido, te
-      recomendamos regresar a la página principal.
-    </p>
-    <p class="mb-4">
-      Entendemos la importancia de mantener un ambiente seguro y respetuoso para
-      todos nuestros visitantes. Si decides continuar, por favor ten en cuenta
-      el contenido sensible que podría estar presente en las siguientes
-      imágenes. Gracias por tu comprensión y respeto hacia nuestras políticas.
+    <p class="my-5 text-xl">
+      Al acceder a esta página, confirmas que tienes al menos 18 años de edad,
+      que comprendes que e material gráfico puede incluir representaciones
+      explícitas de actividades sexuales y que accedes de manera voluntaria y
+      consciente de la naturaleza del contenido
     </p>
     <p class="uk-text-right">
-      <button class="uk-button uk-button-default uk-modal-close" type="button">
-        Volver
-      </button>
       <button
-        class="continue-btn uk-button uk-modal-close bg-[#d5b981] text-white"
+        class="back-btn uk-button uk-button-danger uk-modal-close"
         type="button"
       >
-        Continuar
+        Salir
+      </button>
+      <button
+        class="continue-btn uk-button uk-button-primary uk-modal-close"
+        type="button"
+      >
+        Entrar
       </button>
     </p>
   </div>

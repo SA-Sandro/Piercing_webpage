@@ -2,13 +2,10 @@
 import Layout from '@/layouts/Layout.astro';
 import About from '@/components/about_me/About.astro';
 import Services from '@/components/my_services/Services.astro';
-import Gallery from '@/components/gallery/Gallery.astro';
 import Header from '@/components/header/Header.astro';
 import Carrousel from '@/components/carrousel/Carrousel.astro';
 import Shedule from '@/components/shedule/Shedule.astro';
-import earImagesJSON from '@/data/images_info/earImages.json';
-
-const earImages = earImagesJSON;
+import Genital from '@/components/genital_section/Genital.astro';
 ---
 
 <Layout title="Katapiercing || Home">
@@ -20,12 +17,12 @@ const earImages = earImagesJSON;
       <About />
     </section>
     <section class="dark-section text-white m-auto" id="services">
-      <div class="m-auto max-w-5xl py-10" uk-parallax="opacity: 0,9">
+      <div class="m-auto max-w-7xl py-10" uk-parallax="opacity: 0,9">
         <Services />
       </div>
     </section>
-    <section>
-      <Gallery images={earImages} />
+    <section class="m-auto max-w-5xl p-8">
+      <Genital />
     </section>
     <section uk-parallax="opacity: 0,7" id="testimonials">
       <Carrousel />

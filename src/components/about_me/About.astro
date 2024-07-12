@@ -1,32 +1,68 @@
 ---
 import './about.css';
-import image1 from 'public/img/imagen_sobremi_1.jpg';
-import image2 from 'public/img/imagen_sobremi_2.jpg';
 import Image from '@/components/my_images/Image.astro';
 ---
 
-<div class="m-auto max-w-5xl" id="about">
+<div id="about">
   <div
-    class="grid lg:grid-cols-2 sm:grid-cols-1 items-center justify-center px-6 py-16 m-2"
+    class="max-w-5xl grid lg:grid-cols-2 sm:grid-cols-1 items-center justify-center px-6 py-5 m-auto"
   >
     <div class="m-5 flex flex-col justify-center relative z-20">
       <div class="ab-title">SOBRE MÍ</div>
       <div class="ab-experience sm:max-w-lg m-auto">10 años de experiencia</div>
       <div class="p-3 text-justify sm:max-w-lg m-auto">
-        Morbi ut blandit mauris, ac aliquet arcu. Curabitur non nulla pharetra,
-        sodales neque ac, ultrices orci. Etiam laoreet sem sed posuere mollis.
-        Donec non libero scelerisque, volutpat augue quis, sagittis odio.
-        Curabitur dictum mollis libero vel aliquam. Suspendisse id eleifend
-        sapien. Proin sed lobortis nisl.
+        Desde hace una década, <span class="text-xl text-[#3a3a3a] font-bold"
+          >Kata</span
+        > se ha dedicado a perfeccionar el arte del piercing corporal, convirtiendo
+        su pasión en una carrera llena de satisfacción y orgullo. Con una trayectoria
+        de 10 años en la industria, Kata se especializa en la realización de todo
+        tipo de piercings, siempre garantizando la máxima precisión, rapidez y fiabilidad.
       </div>
     </div>
-    <div class="flex justify-center">
+    <di v class="flex justify-center items-center">
       <div class="relative">
-        <Image class="image1" src={image1.src} alt={'Realización piercing'} />
+        <Image
+          class="image1"
+          src="img/imagen_sobremi_1.jpg"
+          alt={'Realización piercing'}
+        />
         <div class="image2-container">
-          <Image class="image2" src={image2.src} alt={'Anillador'} />
+          <Image
+            class="image2"
+            src="img/imagen_sobremi_2.jpg"
+            alt={'Anillador'}
+          />
         </div>
       </div>
+    </di>
+  </div>
+  <div
+    class="max-w-3xl m-auto grid md:grid-cols-2 sm:grid-cols-1 items-center justify-center px-6"
+  >
+    <div class="video-container flex justify-center">
+      <video
+        autoplay
+        muted
+        loop
+        width="200"
+        class="grayscale md:w-full rounded-lg shadow-2xl"
+      >
+        <source src="media/proceso_piercing.mp4" type="video/mp4" />
+        Tu navegador no soporta el formato de este vídeo
+      </video>
+    </div>
+    <div class="text-justify sm:max-w-lg m-auto p-5">
+      El <span class="text-xl text-[#3a3a3a] font-bold">objetivo</span> principal
+      es proporcionar a cada cliente una experiencia única y segura, asegurando de
+      que cada procedimiento se realice con el mayor cuidado y profesionalismo. En
+      sus trabajos, <span class="text-xl text-[#3a3a3a] font-bold">Kata</span> usa
+      únicamente materiales de la más alta calidad y sigue estrictamente todas las
+      normas de higiene y esterilización. Ya sea tu primer piercing o uno más para
+      la colección, Kata ofrece un servicio personalizado y adaptado a tus necesidades
+      y deseos.
     </div>
   </div>
+</div>
+<div class="ab-experience-sub max-w-xl text-justify m-auto my-5 p-5">
+  ¡Ven y descubre por qué tantos clientes apuestan por Kata!
 </div>

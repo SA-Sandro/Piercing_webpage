@@ -1,0 +1,65 @@
+.genital-title {
+  font-size: 3rem;
+  font-family: 'Alfa Slab One';
+  color: #d5b981;
+}
+
+.genital-subtitle {
+  font-family: 'Open sans';
+  font-size: 1.5rem;
+}
+
+.genital-description {
+  max-width: 25rem;
+  text-align: justify;
+}
+
+.genital-list {
+  margin-left: 5rem;
+}
+
+.genital-list ul li {
+  font-family: 'Open sans';
+  margin: 0.4rem;
+  font-weight: bold;
+}
+
+.redirect-genital-gallery {
+  padding: 0.25rem;
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.redirect-genital-gallery:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.redirect-genital-gallery:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  height: 0.13rem;
+  width: 100%;
+  background: #bf9456;
+  transition: left 0.5s;
+}
+
+.redirect-genital-gallery:hover:after {
+  left: 0;
+}
+
+@media (width < 48rem) {
+  .genital-list {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}

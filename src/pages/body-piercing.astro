@@ -4,6 +4,7 @@ import Navbar from '@/components/header/navbar/Navbar.astro';
 import SubHeader from '@/components/sub_header/SubHeader.astro';
 import Layout from '@/layouts/Layout.astro';
 import bodyImagesJSON from '@/data/images_info/bodyImages.json';
+import SocialMedias from '@/components/social_medias/SocialMedias.astro';
 
 const bodyImages = bodyImagesJSON;
 ---
@@ -22,5 +23,6 @@ const bodyImages = bodyImagesJSON;
   </header>
   <main slot="main">
     <Gallery images={bodyImages} />
+    <SocialMedias />
   </main>
 </Layout>
