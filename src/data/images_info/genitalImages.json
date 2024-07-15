@@ -1,44 +1,8 @@
 [
   {
     "id": 0,
-    "url": "img/img1.jpg",
-    "alt": "Hola soy la primera imagen",
-    "explicitContent": true
-  },
-  {
-    "id": 1,
-    "url": "img/imagen_sobremi_2.jpg",
-    "alt": "Hola soy la segunda imagen",
-    "explicitContent": true
-  },
-  {
-    "id": 2,
-    "url": "img/img3.jpg",
-    "alt": "Hola soy la tercera imagen",
-    "explicitContent": true
-  },
-  {
-    "id": 3,
-    "url": "img/img4.jpg",
-    "alt": "Hola soy la cuarta imagen",
-    "explicitContent": true
-  },
-  {
-    "id": 4,
-    "url": "img/img5.jpg",
-    "alt": "Hola soy la quinta imagen",
-    "explicitContent": true
-  },
-  {
-    "id": 5,
-    "url": "img/img6.jpg",
-    "alt": "Hola soy la sexta imagen",
-    "explicitContent": true
-  },
-  {
-    "id": 6,
-    "url": "img/imgPrueba.png",
-    "alt": "Hola soy la septima imagen",
+    "url": "img/genital/christina_1.jpg",
+    "alt": "Christina",
     "explicitContent": true
   }
 ]
