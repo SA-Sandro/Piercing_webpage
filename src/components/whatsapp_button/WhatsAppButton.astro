@@ -3,7 +3,7 @@ import WhatsApp from '@/components/my_icons/WhatsApp.astro';
 import './whatsapp-button.css';
 ---
 
-<div class="whats-container absolute">
+<div class="whats-container relative">
   <a
     href="https://api.whatsapp.com/send?phone=34650680724&text=Hola,%20me%20gustaría%20reservar%20una%20cita"
     class="mailToWha"
@@ -21,3 +21,28 @@ import './whatsapp-button.css';
     >
   </a>
 </div>
+
+<script>
+  function updateRightPosition() {
+    const screenWidth: number = window.innerWidth;
+    const mailToWhat = document.querySelector('.mailToWha') as HTMLElement;
+
+    if (screenWidth > 1800) {
+      const extraWidth: number = screenWidth - 1800;
+      const rightPercentage: number = 8 + extraWidth / 100;
+      mailToWhat.style.right = `${rightPercentage}%`;
+    }
+    if (screenWidth > 4900) {
+      const extraWidth: number = screenWidth - 5000;
+      const rightPercentage: number = 35 + extraWidth / 100;
+      mailToWhat.style.right = `${rightPercentage}%`;
+    }
+    if (screenWidth < 1800) {
+      mailToWhat.style.right = '2%';
+    }
+  }
+
+  window.addEventListener('resize', updateRightPosition);
+
+  updateRightPosition();
+</script>
