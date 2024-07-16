@@ -1,7 +1,6 @@
 ---
 import Gallery from '@/components/gallery/Gallery.astro';
 import Navbar from '@/components/header/navbar/Navbar.astro';
-import SubHeader from '@/components/sub_header/SubHeader.astro';
 import Layout from '@/layouts/Layout.astro';
 import faceImagesJSON from '@/data/images_info/faceImages.json';
 import SocialMedias from '@/components/social_medias/SocialMedias.astro';
@@ -12,17 +11,99 @@ const faceImages = faceImagesJSON;
 <Layout title="Piercing-rostro || Galería">
   <header slot="header">
     <Navbar />
-    <SubHeader>
-      <div slot="title" class="page-title">Piercing en el rostro</div>
-      <div slot="description" class="page-description w-72">
-        El piercing en la lengua suele hacerse por simple estética o por placer
-        sexual. Al principio genera una importante inflamación, pero al mismo
-        tiempo es uno de los más rápidos en cicatrizar.
+    <div class="pt-32 info-container">
+      <div class="info">
+        <div class="page-title">Piercing en el rostro</div>
+        <div class="page-description">
+          Los piercings en la cara son una forma popular de expresión personal y
+          estética. Estos piercings pueden incluir áreas como las cejas, la
+          nariz, los labios, el labio superior (medusa), y las mejillas
+          (dimple). Cada tipo de piercing facial tiene su propio proceso de
+          cicatrización y requiere cuidados específicos para asegurar una
+          sanación adecuada. Los piercings faciales no solo realzan las
+          características del rostro, sino que también permiten una amplia gama
+          de estilos y combinaciones únicas. Es crucial seguir las
+          recomendaciones de un profesional para minimizar el riesgo de
+          infecciones y asegurar una recuperación saludable.
+        </div>
       </div>
-    </SubHeader>
+    </div>
   </header>
   <main slot="main">
     <Gallery images={faceImages} />
     <SocialMedias />
   </main>
 </Layout>
+
+<style>
+  .page-title {
+    font-family: 'Alfa Slab One';
+    font-size: 1.3rem;
+    color: #d5b981;
+  }
+
+  .page-description {
+    font-size: 0.7rem;
+    font-family: 'Open Sans';
+    max-width: 12rem;
+  }
+
+  .info-container {
+    position: relative;
+    width: 100%;
+    min-height: 30rem;
+    color: white;
+    z-index: 1;
+  }
+
+  .info-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/face/septum_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 60%;
+    filter: brightness(0.15);
+    z-index: -1;
+  }
+
+  .info {
+    position: absolute;
+    padding: 0.4rem;
+    top: 37%;
+    left: 10%;
+  }
+
+  .page-description {
+    font-size: 1rem;
+    text-align: justify;
+    max-width: 35rem;
+  }
+
+  @media (width < 45rem) {
+    .page-description {
+      max-width: 30rem;
+    }
+  }
+
+  @media (width < 37.5rem) {
+    .page-description {
+      font-size: 0.8rem;
+      max-width: 25rem;
+    }
+  }
+
+  @media (width < 31.25rem) {
+    .page-description {
+      max-width: 17rem;
+    }
+
+    .info {
+      left: 5%;
+    }
+  }
+</style>

@@ -1,7 +1,6 @@
 ---
 import Gallery from '@/components/gallery/Gallery.astro';
 import Navbar from '@/components/header/navbar/Navbar.astro';
-import SubHeader from '@/components/sub_header/SubHeader.astro';
 import Layout from '@/layouts/Layout.astro';
 import earImagesJSON from '@/data/images_info/earImages.json';
 import SocialMedias from '@/components/social_medias/SocialMedias.astro';
@@ -12,17 +11,106 @@ const earImages = earImagesJSON;
 <Layout title="Piercing-oreja || Galería">
   <header slot="header">
     <Navbar />
-    <SubHeader>
-      <div slot="title" class="page-title">Piercing en la oreja</div>
-      <div slot="description" class="page-description w-72">
-        El piercing en la lengua suele hacerse por simple estética o por placer
-        sexual. Al principio genera una importante inflamación, pero al mismo
-        tiempo es uno de los más rápidos en cicatrizar.
+    <div class="pt-32 info-container">
+      <div class="info">
+        <div class="page-title">Piercing en la oreja</div>
+        <div class="page-description">
+          El piercing en la oreja es uno de los tipos de perforaciones más
+          populares y variados. Desde los clásicos lóbulos perforados hasta los
+          más complejos como el hélix, tragus o daith, las opciones son casi
+          infinitas. Además de ser una expresión de estilo y personalidad, los
+          piercings en la oreja pueden tener significados culturales y
+          personales. El proceso de cicatrización varía según la ubicación del
+          piercing, pero en general, se recomienda mantener una buena higiene y
+          seguir las indicaciones del profesional para evitar infecciones y
+          asegurar una rápida recuperación.
+        </div>
       </div>
-    </SubHeader>
+    </div>
   </header>
   <main slot="main">
     <Gallery images={earImages} />
     <SocialMedias />
   </main>
 </Layout>
+
+<style>
+  .page-title {
+    font-family: 'Alfa Slab One';
+    font-size: 1.3rem;
+    color: #d5b981;
+  }
+
+  .page-description {
+    font-size: 0.7rem;
+    font-family: 'Open Sans';
+    max-width: 12rem;
+  }
+
+  .info-container {
+    position: relative;
+    width: 100%;
+    min-height: 30rem;
+    color: white;
+    z-index: 1;
+  }
+
+  .info-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/ear/helix_upperlobe_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    filter: brightness(0.15);
+    z-index: -1;
+  }
+
+  .info {
+    position: absolute;
+    padding: 0.4rem;
+    top: 37%;
+    left: 10%;
+  }
+
+  .page-description {
+    font-size: 1rem;
+    text-align: justify;
+    max-width: 35rem;
+  }
+
+  @media (width < 45rem) {
+    .page-description {
+      max-width: 30rem;
+    }
+  }
+
+  @media (width < 37.5rem) {
+    .page-description {
+      font-size: 0.8rem;
+      max-width: 25rem;
+    }
+  }
+
+  @media (width < 31.25rem) {
+    .page-description {
+      max-width: 17rem;
+    }
+    .info {
+      left: 5%;
+    }
+    .info-container::before {
+      background-position-x: 50%;
+    }
+  }
+
+  @media (width > 125rem) {
+    .info {
+      left: calc(20rem + 40vw);
+    }
+  }
+</style>

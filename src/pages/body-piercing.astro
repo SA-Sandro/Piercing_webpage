@@ -1,7 +1,6 @@
 ---
 import Gallery from '@/components/gallery/Gallery.astro';
 import Navbar from '@/components/header/navbar/Navbar.astro';
-import SubHeader from '@/components/sub_header/SubHeader.astro';
 import Layout from '@/layouts/Layout.astro';
 import bodyImagesJSON from '@/data/images_info/bodyImages.json';
 import SocialMedias from '@/components/social_medias/SocialMedias.astro';
@@ -12,17 +11,98 @@ const bodyImages = bodyImagesJSON;
 <Layout title="Body-piercing || Galería">
   <header slot="header">
     <Navbar />
-    <SubHeader>
-      <div slot="title" class="page-title">Piercing por el cuerpo</div>
-      <div slot="description" class="page-description w-72">
-        El piercing en la lengua suele hacerse por simple estética o por placer
-        sexual. Al principio genera una importante inflamación, pero al mismo
-        tiempo es uno de los más rápidos en cicatrizar.
+    <div class="pt-32 info-container">
+      <div class="info">
+        <div class="page-title">Piercing por el cuerpo</div>
+        <div class="page-description">
+          Los piercings corporales son una forma de modificación corporal que
+          puede ser tanto estética como cultural. Este tipo de perforaciones
+          incluye una variedad de áreas del cuerpo, como el ombligo, los
+          pezones, la clavícula, y más. Cada tipo de piercing corporal tiene su
+          propio proceso de cicatrización y cuidados específicos. Los piercings
+          corporales permiten una amplia expresión de estilo personal y pueden
+          resaltar diferentes partes del cuerpo de manera única. Es esencial
+          seguir las recomendaciones de un profesional para asegurar una
+          correcta cicatrización y minimizar el riesgo de infecciones.
+        </div>
       </div>
-    </SubHeader>
+    </div>
   </header>
   <main slot="main">
     <Gallery images={bodyImages} />
     <SocialMedias />
   </main>
 </Layout>
+
+<style>
+  .page-title {
+    font-family: 'Alfa Slab One';
+    font-size: 1.3rem;
+    color: #d5b981;
+  }
+
+  .page-description {
+    font-size: 0.7rem;
+    font-family: 'Open Sans';
+    max-width: 12rem;
+  }
+
+  .info-container {
+    position: relative;
+    width: 100%;
+    min-height: 30rem;
+    color: white;
+    z-index: 1;
+  }
+
+  .info-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/body/bellybuttom_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    filter: brightness(0.15);
+    z-index: -1;
+  }
+
+  .info {
+    position: absolute;
+    padding: 0.4rem;
+    top: 37%;
+    left: 10%;
+  }
+
+  .page-description {
+    font-size: 1rem;
+    text-align: justify;
+    max-width: 35rem;
+  }
+
+  @media (width < 45rem) {
+    .page-description {
+      max-width: 30rem;
+    }
+  }
+
+  @media (width < 37.5rem) {
+    .page-description {
+      font-size: 0.8rem;
+      max-width: 25rem;
+    }
+  }
+
+  @media (width < 31.25rem) {
+    .page-description {
+      max-width: 17rem;
+    }
+
+    .info {
+      left: 5%;
+    }
+  }
+</style>

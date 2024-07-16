@@ -1,7 +1,6 @@
 ---
 import Gallery from '@/components/gallery/Gallery.astro';
 import Navbar from '@/components/header/navbar/Navbar.astro';
-import SubHeader from '@/components/sub_header/SubHeader.astro';
 import Layout from '@/layouts/Layout.astro';
 import genitalImagesJSON from '@/data/images_info/genitalImages.json';
 import SocialMedias from '@/components/social_medias/SocialMedias.astro';
@@ -12,14 +11,25 @@ const genitalImages = genitalImagesJSON;
 <Layout title="Piercing-genitales || Galería">
   <header slot="header">
     <Navbar />
-    <SubHeader>
-      <div slot="title" class="page-title">Piercing en el rostro</div>
-      <div slot="description" class="page-description w-72">
-        El piercing en la lengua suele hacerse por simple estética o por placer
-        sexual. Al principio genera una importante inflamación, pero al mismo
-        tiempo es uno de los más rápidos en cicatrizar.
+    <div class="pt-32 info-container">
+      <div class="info">
+        <div class="page-title">Piercing en el rostro</div>
+        <div class="page-description">
+          Los piercings genitales son una forma de modificación corporal que
+          puede tener significados personales, culturales y estéticos. Estos
+          piercings incluyen una variedad de opciones tanto para hombres como
+          para mujeres, como el Prince Albert, el clítoris, los labios
+          vaginales, el frenum, entre otros. Además de su aspecto decorativo,
+          muchos eligen los piercings genitales por el aumento de la
+          sensibilidad y el placer sexual. La cicatrización de estos piercings
+          puede variar y requiere una atención y cuidado específicos para evitar
+          infecciones y asegurar una sanación adecuada. Es fundamental
+          realizarse este tipo de piercings en un entorno profesional y seguir
+          todas las recomendaciones de cuidado post-piercing para garantizar una
+          experiencia segura y saludable.
+        </div>
       </div>
-    </SubHeader>
+    </div>
   </header>
   <main slot="main">
     <Gallery images={genitalImages} />
@@ -60,3 +70,76 @@ const genitalImages = genitalImagesJSON;
     });
   });
 </script>
+
+<style>
+  .page-title {
+    font-family: 'Alfa Slab One';
+    font-size: 1.5rem;
+    color: #d5b981;
+  }
+
+  .page-description {
+    font-size: 0.7rem;
+    font-family: 'Open Sans';
+    max-width: 12rem;
+  }
+
+  .info-container {
+    position: relative;
+    width: 100%;
+    min-height: 30rem;
+    color: white;
+    z-index: 1;
+  }
+
+  .info-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/genital/prueba.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    filter: brightness(0.15);
+    z-index: -1;
+  }
+
+  .info {
+    position: absolute;
+    padding: 0.4rem;
+    top: 37%;
+    left: 10%;
+  }
+
+  .page-description {
+    font-size: 1rem;
+    text-align: justify;
+    max-width: 35rem;
+  }
+
+  @media (width < 45rem) {
+    .page-description {
+      max-width: 30rem;
+    }
+  }
+
+  @media (width < 37.5rem) {
+    .page-description {
+      font-size: 0.8rem;
+      max-width: 25rem;
+    }
+  }
+
+  @media (width < 31.25rem) {
+    .page-description {
+      max-width: 17rem;
+    }
+
+    .info {
+      left: 5%;
+    }
+  }
+</style>
