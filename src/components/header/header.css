@@ -13,11 +13,17 @@
 
 .header-content {
   margin: auto;
-  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar el contraste */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo semi-transparente para mejorar el contraste */
 }
 
 .header-description {
   text-align: center;
+  color: #dbd9d6;
   font-size: 1.2rem;
   margin-top: 10px;
   opacity: 0.8;
@@ -33,7 +39,6 @@
 }
 
 @media (width < 26.563rem) {
-
   .header-container {
     padding: 7rem 0.5rem;
   }
