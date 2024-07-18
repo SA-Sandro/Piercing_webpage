@@ -1,0 +1,22 @@
+---
+import './subheader.css';
+---
+
+<div class="pt-32 info-container">
+  <div class="info">
+    <slot name="page-title" />
+    <slot name="page-description" />
+  </div>
+</div>
+
+<script>
+  import {
+    updateBackgroundImage,
+    updateRightPosition
+  } from '@/lib/headerFunctions';
+
+  document.addEventListener('astro:page-load', () => {
+    updateBackgroundImage();
+  });
+  window.addEventListener('resize', updateRightPosition);
+</script>

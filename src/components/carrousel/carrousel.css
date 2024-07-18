@@ -1,6 +1,6 @@
 .reviews-title {
-  font-family: 'Alfa Slab One';
-  color: #d5b981;
+  font-family: var(--title-font);
+  color: var(--main-color);
   text-align: center;
   font-size: 3rem;
 }
@@ -21,10 +21,10 @@
 }
 
 .reviews-anchor {
-  font-family: 'Alfa Slab One';
+  font-family: var(--title-font);
   font-size: 1rem;
   text-transform: uppercase;
-  color: #d5b981;
+  color: var(--main-color);
   transition: color 0.1s ease-in-out;
 }
 
@@ -40,12 +40,12 @@
 }
 
 .slide-icon-prev {
-  color: #d5b981 !important;
+  color: var(--main-color) !important;
   margin: 0;
 }
 
 .slide-icon-next {
-  color: #d5b981 !important;
+  color: var(--main-color) !important;
   margin: 0;
 }
 

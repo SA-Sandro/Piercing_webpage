@@ -8,19 +8,19 @@
   display: flex;
   margin: auto;
   align-items: center;
-  font-family: 'Open Sans';
+  font-family: var(--text-font);
   width: fit-content;
   font-size: 1rem;
   text-transform: uppercase;
   overflow: hidden;
-  color: #d5b981;
+  color: var(--main-color);
   font-weight: bold;
   transition: color 0.1s ease-in-out;
 }
 
 .back-anchor:hover {
   text-decoration: none;
-  color: #d5b981;
+  color: var(--main-color);
 }
 
 .back-anchor:after {

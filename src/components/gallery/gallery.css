@@ -10,9 +10,9 @@
 }
 
 .title-container div {
-  font-family: 'Alfa Slab One';
+  font-family: var(--title-font);
   font-size: 3rem;
-  color: #d5b981;
+  color: var(--main-color);
   font-weight: lighter;
 }
 
@@ -35,7 +35,7 @@
   text-align: center;
   background-color: #0d0a09;
   color: white;
-  font-family: 'Open sans';
+  font-family: var(--text-font);
   opacity: 0.8;
 }
 

@@ -3,7 +3,7 @@
 }
 
 .company-name {
-  font-family: 'Alfa Slab One';
+  font-family: var(--title-font);
   font-size: 1.1rem;
   color: #ffe09ed0;
 }

@@ -6,19 +6,14 @@
 }
 
 .subt-text {
-  font-family: 'Open sans';
+  font-family: var(--text-font);
   color: white;
   font-size: 3rem;
 }
 
 .header-content {
   margin: auto;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Fondo semi-transparente para mejorar el contraste */
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .header-description {

@@ -1,13 +1,13 @@
 .ab-title {
-  font-family: 'Alfa Slab One';
+  font-family: var(--title-font);
   font-size: 1.5rem;
   text-align: center;
-  color: #bf9456;
+  color: var(--main-color);
 }
 
 .ab-experience {
   padding: 0.375rem;
-  font-family: 'Alfa Slab One';
+  font-family: var(--title-font);
   font-size: 3rem;
   text-align: center;
   color: #3a3a3a;
@@ -15,8 +15,8 @@
 
 .ab-experience-sub {
   text-align: center;
-  color: #bf9456;
-  font-family: 'Alfa Slab One';
+  color: var(--main-color);
+  font-family: var(--title-font);
   font-size: 1.5rem;
 }
 
@@ -37,18 +37,16 @@
 }
 
 .video-container {
-    margin: 2rem 2rem;
-  }
+  margin: 2rem 2rem;
+}
 
 @media (width <= 23.438rem) {
   .ab-experience {
     font-size: 2rem;
   }
-
 }
 
-@media (width < 56.25rem ) {
-  
+@media (width < 56.25rem) {
 }
 
 @media (width > 36rem) {
@@ -58,7 +56,6 @@
   .image2 {
     max-width: 9rem;
   }
-
 }
 
 @media (width > 64rem) {
