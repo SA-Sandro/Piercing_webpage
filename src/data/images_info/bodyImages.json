@@ -10,5 +10,23 @@
     "url": "img/body/bellybuttom_2.jpg",
     "alt": "Belly buttom",
     "explicitContent": false
+  },
+  {
+    "id": 2,
+    "url": "img/body/microdermal_1.jpg",
+    "alt": "Microdermal",
+    "explicitContent": false
+  },
+  {
+    "id": 3,
+    "url": "img/body/microdermal_2.jpg",
+    "alt": "Microdermal",
+    "explicitContent": false
+  },
+  {
+    "id": 4,
+    "url": "img/body/microdermal_3.jpg",
+    "alt": "Microdermal",
+    "explicitContent": false
   }
 ]
