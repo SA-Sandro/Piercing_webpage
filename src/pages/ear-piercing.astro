@@ -1,10 +1,10 @@
 ---
 import Gallery from '@/components/gallery/Gallery.astro';
 import Navbar from '@/components/header/navbar/Navbar.astro';
-import SubHeader from '@/components/sub_header/SubHeader.astro';
 import Layout from '@/layouts/Layout.astro';
 import earImagesJSON from '@/data/images_info/earImages.json';
 import SocialMedias from '@/components/social_medias/SocialMedias.astro';
+import Subheader from '@/components/subheader/Subheader.astro';
 
 const earImages = earImagesJSON;
 ---
@@ -12,17 +12,23 @@ const earImages = earImagesJSON;
 <Layout title="Piercing-oreja || Galería">
   <header slot="header">
     <Navbar />
-    <SubHeader>
-      <div slot="title" class="page-title">Piercing en la oreja</div>
-      <div slot="description" class="page-description w-72">
-        El piercing en la lengua suele hacerse por simple estética o por placer
-        sexual. Al principio genera una importante inflamación, pero al mismo
-        tiempo es uno de los más rápidos en cicatrizar.
+    <Subheader>
+      <div slot="page-title" class="page-title">Piercing en la oreja</div>
+      <div slot="page-description" class="page-description">
+        El piercing en la oreja es uno de los tipos de perforaciones más
+        populares y variados. Desde los clásicos lóbulos perforados hasta los
+        más complejos como el hélix, tragus o daith, las opciones son casi
+        infinitas. Además de ser una expresión de estilo y personalidad, los
+        piercings en la oreja pueden tener significados culturales y personales.
+        El proceso de cicatrización varía según la ubicación del piercing, pero
+        en general, se recomienda mantener una buena higiene y seguir las
+        indicaciones del profesional para evitar infecciones y asegurar una
+        rápida recuperación.
       </div>
-    </SubHeader>
+    </Subheader>
   </header>
   <main slot="main">
     <Gallery images={earImages} />
-    <SocialMedias />
+    <SocialMedias name="piercing en la oreja" />
   </main>
 </Layout>

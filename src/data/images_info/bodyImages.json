@@ -1,44 +1,32 @@
 [
   {
     "id": 0,
-    "url": "img/img1.jpg",
-    "alt": "Hola soy la primera imagen",
+    "url": "img/body/bellybuttom_1.jpg",
+    "alt": "Belly buttom",
     "explicitContent": false
   },
   {
     "id": 1,
-    "url": "img/imagen_sobremi_2.jpg",
-    "alt": "Hola soy la segunda imagen",
+    "url": "img/body/bellybuttom_2.jpg",
+    "alt": "Belly buttom",
     "explicitContent": false
   },
   {
     "id": 2,
-    "url": "img/img3.jpg",
-    "alt": "Hola soy la tercera imagen",
+    "url": "img/body/microdermal_1.jpg",
+    "alt": "Microdermal",
     "explicitContent": false
   },
   {
     "id": 3,
-    "url": "img/img4.jpg",
-    "alt": "Hola soy la cuarta imagen",
+    "url": "img/body/microdermal_2.jpg",
+    "alt": "Microdermal",
     "explicitContent": false
   },
   {
     "id": 4,
-    "url": "img/img5.jpg",
-    "alt": "Hola soy la quinta imagen",
-    "explicitContent": false
-  },
-  {
-    "id": 5,
-    "url": "img/img6.jpg",
-    "alt": "Hola soy la sexta imagen",
-    "explicitContent": false
-  },
-  {
-    "id": 6,
-    "url": "img/imgPrueba.png",
-    "alt": "Hola soy la septima imagen",
+    "url": "img/body/microdermal_3.jpg",
+    "alt": "Microdermal",
     "explicitContent": false
   }
 ]

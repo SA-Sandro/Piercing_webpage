@@ -1,44 +1,176 @@
 [
   {
     "id": 0,
-    "url": "img/img1.jpg",
-    "alt": "Hola soy la primera imagen",
+    "url": "img/ear/daith.jpg",
+    "alt": "Daith",
     "explicitContent": false
   },
   {
     "id": 1,
-    "url": "img/imagen_sobremi_2.jpg",
-    "alt": "Hola soy la segunda imagen",
+    "url": "img/ear/helix_2.jpg",
+    "alt": "Helix",
     "explicitContent": false
   },
   {
     "id": 2,
-    "url": "img/img3.jpg",
-    "alt": "Hola soy la tercera imagen",
+    "url": "img/ear/helix_3.jpg",
+    "alt": "Helix",
     "explicitContent": false
   },
   {
     "id": 3,
-    "url": "img/img4.jpg",
-    "alt": "Hola soy la cuarta imagen",
+    "url": "img/ear/helix_4.jpg",
+    "alt": "Helix",
     "explicitContent": false
   },
   {
     "id": 4,
-    "url": "img/img5.jpg",
-    "alt": "Hola soy la quinta imagen",
+    "url": "img/ear/helix_rook.jpg",
+    "alt": "Helix y Rook",
     "explicitContent": false
   },
   {
     "id": 5,
-    "url": "img/img6.jpg",
-    "alt": "Hola soy la sexta imagen",
+    "url": "img/ear/helix_upperlobe.jpg",
+    "alt": "Helix y Upperlobe",
     "explicitContent": false
   },
   {
     "id": 6,
-    "url": "img/imgPrueba.png",
-    "alt": "Hola soy la septima imagen",
+    "url": "img/ear/helix_upperlobe_2.jpg",
+    "alt": "Helix y Upperlobe",
+    "explicitContent": false
+  },
+  {
+    "id": 7,
+    "url": "img/ear/lobe_1.jpg",
+    "alt": "Lobe",
+    "explicitContent": false
+  },
+  {
+    "id": 8,
+    "url": "img/ear/lobe_upperlobe_helix_.jpg",
+    "alt": "Helix, Upperlobe y Lobe",
+    "explicitContent": false
+  },
+  {
+    "id": 9,
+    "url": "img/ear/orbitalconch_1.jpg",
+    "alt": "Orbital Conch",
+    "explicitContent": false
+  },
+  {
+    "id": 10,
+    "url": "img/ear/orbitalconch_helix.jpg",
+    "alt": "Orbital Conch y Helix",
+    "explicitContent": false
+  },
+  {
+    "id": 11,
+    "url": "img/ear/Rookpiercing_1.jpg",
+    "alt": "Rook",
+    "explicitContent": false
+  },
+  {
+    "id": 12,
+    "url": "img/ear/tragus_upperlobe.jpg",
+    "alt": "Tragus y Upperlobe",
+    "explicitContent": false
+  },
+  {
+    "id": 13,
+    "url": "img/ear/tragus_upperlobe_2.jpg",
+    "alt": "Tragus y Upperlobe",
+    "explicitContent": false
+  },
+  {
+    "id": 14,
+    "url": "img/ear/upperlobe_2.jpg",
+    "alt": "Upperlobe",
+    "explicitContent": false
+  },
+  {
+    "id": 15,
+    "url": "img/ear/upperlobe_3.jpg",
+    "alt": "Upperlobe",
+    "explicitContent": false
+  },
+  {
+    "id": 16,
+    "url": "img/ear/upperlobe_4.jpg",
+    "alt": "Upperlobe",
+    "explicitContent": false
+  },
+  {
+    "id": 17,
+    "url": "img/ear/upperlobe_helix.jpg",
+    "alt": "Upperlobe y Helix",
+    "explicitContent": false
+  },
+  {
+    "id": 18,
+    "url": "img/ear/upperlobe_helix_2.jpg",
+    "alt": "Upperlobe y Helix",
+    "explicitContent": false
+  },
+  {
+    "id": 19,
+    "url": "img/ear/industrial_1.jpg",
+    "alt": "Industrial",
+    "explicitContent": false
+  },
+  {
+    "id": 20,
+    "url": "img/ear/industrial_2.jpg",
+    "alt": "Industrial",
+    "explicitContent": false
+  },
+  {
+    "id": 21,
+    "url": "img/ear/industrial_3.jpg",
+    "alt": "Industrial",
+    "explicitContent": false
+  },
+  {
+    "id": 22,
+    "url": "img/ear/industrial_4.jpg",
+    "alt": "Industrial",
+    "explicitContent": false
+  },
+  {
+    "id": 23,
+    "url": "img/ear/tragus_1.jpg",
+    "alt": "Tragus",
+    "explicitContent": false
+  },
+  {
+    "id": 24,
+    "url": "img/ear/tragus_2.jpg",
+    "alt": "Tragus",
+    "explicitContent": false
+  },
+  {
+    "id": 25,
+    "url": "img/ear/tragus_3.jpg",
+    "alt": "Tragus",
+    "explicitContent": false
+  },
+  {
+    "id": 26,
+    "url": "img/ear/completed-design.jpg",
+    "alt": "Diseño completo de piercings en la oreja",
+    "explicitContent": false
+  },
+  {
+    "id": 27,
+    "url": "img/ear/daith_2.jpg",
+    "alt": "Daith",
+    "explicitContent": false
+  },
+  {
+    "id": 28,
+    "url": "img/ear/daith_3.jpg",
+    "alt": "Daith",
     "explicitContent": false
   }
 ]

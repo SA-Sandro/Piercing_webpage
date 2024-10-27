@@ -6,18 +6,37 @@
 }
 
 .subt-text {
-  font-family: 'Open sans';
+  font-family: var(--text-font);
   color: white;
   font-size: 3rem;
 }
 
+.header-content {
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header-description {
+  text-align: center;
+  color: #dbd9d6;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
 @media (width < 34.375rem) {
+  .header-container {
+    padding: 7rem 1.5rem;
+  }
   .main-container {
     background-position-x: -10rem;
   }
 }
 
 @media (width < 26.563rem) {
+  .header-container {
+    padding: 7rem 0.5rem;
+  }
   .main-container {
     background-position-x: -20rem;
   }

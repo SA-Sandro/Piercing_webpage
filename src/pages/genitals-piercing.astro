@@ -1,10 +1,10 @@
 ---
 import Gallery from '@/components/gallery/Gallery.astro';
 import Navbar from '@/components/header/navbar/Navbar.astro';
-import SubHeader from '@/components/sub_header/SubHeader.astro';
 import Layout from '@/layouts/Layout.astro';
 import genitalImagesJSON from '@/data/images_info/genitalImages.json';
 import SocialMedias from '@/components/social_medias/SocialMedias.astro';
+import Subheader from '@/components/subheader/Subheader.astro';
 
 const genitalImages = genitalImagesJSON;
 ---
@@ -12,51 +12,41 @@ const genitalImages = genitalImagesJSON;
 <Layout title="Piercing-genitales || Galería">
   <header slot="header">
     <Navbar />
-    <SubHeader>
-      <div slot="title" class="page-title">Piercing en el rostro</div>
-      <div slot="description" class="page-description w-72">
-        El piercing en la lengua suele hacerse por simple estética o por placer
-        sexual. Al principio genera una importante inflamación, pero al mismo
-        tiempo es uno de los más rápidos en cicatrizar.
+    <Subheader>
+      <div slot="page-title" class="page-title">Piercing genital</div>
+      <div slot="page-description" class="page-description">
+        Los piercings genitales son una forma de modificación corporal que puede
+        tener significados personales, culturales y estéticos. Estos piercings
+        incluyen una variedad de opciones tanto para hombres como para mujeres,
+        como el Prince Albert, el clítoris, los labios vaginales, el frenum,
+        entre otros. Además de su aspecto decorativo, muchos eligen los
+        piercings genitales por el aumento de la sensibilidad y el placer
+        sexual. La cicatrización de estos piercings puede variar y requiere una
+        atención y cuidado específicos para evitar infecciones y asegurar una
+        sanación adecuada. Es fundamental realizarse este tipo de piercings en
+        un entorno profesional y seguir todas las recomendaciones de cuidado
+        post-piercing para garantizar una experiencia segura y saludable.
       </div>
-    </SubHeader>
+    </Subheader>
   </header>
   <main slot="main">
     <Gallery images={genitalImages} />
-    <SocialMedias />
+    <SocialMedias name="piercing genitales" />
   </main>
 </Layout>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const openLightBox = (event: MouseEvent) => {
-      const target = event.target as HTMLElement;
-      const imageId = target.getAttribute('data-image-id');
-      const explicitImageLink = document.getElementById(imageId!);
-      if (explicitImageLink) {
-        explicitImageLink.click();
-      }
-    };
+  import { showWarning, backToHome } from '@/lib/explicitContentManager.ts';
 
-    const hiddenInput = document.querySelector('.hidden-input');
-    if (hiddenInput) {
-      const event = new MouseEvent('click', {
-        view: window,
-        bubbles: true,
-        cancelable: true
-      });
-      hiddenInput.dispatchEvent(event);
-    }
+  document.addEventListener(
+    'astro:page-load',
+    () => {
+      showWarning();
+    },
+    { once: true }
+  );
 
-    const showImageButtons = document.querySelectorAll(
-      '.show-image'
-    ) as NodeListOf<HTMLElement>;
-    showImageButtons.forEach((imageButton) => {
-      imageButton.addEventListener('click', openLightBox);
-    });
-
-    document.querySelector('.back-btn')?.addEventListener('click', () => {
-      location.replace('index.html');
-    });
+  document.querySelector('.back-btn')?.addEventListener('click', () => {
+    backToHome();
   });
 </script>

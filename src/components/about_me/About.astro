@@ -37,21 +37,21 @@ import Image from '@/components/my_images/Image.astro';
     </di>
   </div>
   <div
-    class="max-w-3xl m-auto grid md:grid-cols-2 sm:grid-cols-1 items-center justify-center px-6"
+    class="max-w-4xl m-auto grid md:grid-cols-2 sm:grid-cols-1 items-center justify-center px-6"
   >
     <div class="video-container flex justify-center">
       <video
         autoplay
         muted
         loop
-        width="200"
+        width="150"
         class="grayscale md:w-full rounded-lg shadow-2xl"
       >
         <source src="media/proceso_piercing.mp4" type="video/mp4" />
         Tu navegador no soporta el formato de este vídeo
       </video>
     </div>
-    <div class="text-justify sm:max-w-lg m-auto p-5">
+    <div class="text-justify sm:max-w-lg m-auto p-4">
       El <span class="text-xl text-[#3a3a3a] font-bold">objetivo</span> principal
       es proporcionar a cada cliente una experiencia única y segura, asegurando de
       que cada procedimiento se realice con el mayor cuidado y profesionalismo. En
@@ -60,6 +60,24 @@ import Image from '@/components/my_images/Image.astro';
       normas de higiene y esterilización. Ya sea tu primer piercing o uno más para
       la colección, Kata ofrece un servicio personalizado y adaptado a tus necesidades
       y deseos.
+    </div>
+  </div>
+  <div
+    class="max-w-4xl m-auto grid md:grid-cols-2 sm:grid-cols-1 items-center justify-between px-6"
+  >
+    <div class="text-justify sm:max-w-lg p-4">
+      <span class="text-xl text-[#3a3a3a] font-bold">Kata</span> también se dedica
+      a la enseñanza y formación de nuevas personas en el arte del piercing, ofreciendo
+      cursos detallados y prácticos que abarcan desde los conceptos básicos hasta
+      técnicas avanzadas. Sus programas están diseñados para proporcionar a los estudiantes
+      una comprensión profunda de la anatomía, higiene y seguridad, así como las
+      últimas tendencias y estilos en piercings.
+    </div>
+    <div class="mx-auto">
+      <video controls width="250" class="grayscale rounded-lg shadow-2xl">
+        <source src="media/video_formacion1.mp4" type="video/mp4" />
+        Tu navegador no soporta el formato de este vídeo
+      </video>
     </div>
   </div>
 </div>

@@ -1,44 +1,146 @@
 [
   {
     "id": 0,
-    "url": "img/img1.jpg",
-    "alt": "Hola soy la primera imagen",
+    "url": "img/face/nostril_1.jpg",
+    "alt": "Nostril",
     "explicitContent": false
   },
   {
     "id": 1,
-    "url": "img/imagen_sobremi_2.jpg",
-    "alt": "Hola soy la segunda imagen",
+    "url": "img/face/nostril_2.jpg",
+    "alt": "Nostril",
     "explicitContent": false
   },
   {
     "id": 2,
-    "url": "img/img3.jpg",
-    "alt": "Hola soy la tercera imagen",
+    "url": "img/face/septum_1.jpg",
+    "alt": "Septum",
     "explicitContent": false
   },
   {
     "id": 3,
-    "url": "img/img4.jpg",
-    "alt": "Hola soy la cuarta imagen",
+    "url": "img/face/septum_2.jpg",
+    "alt": "Septum",
     "explicitContent": false
   },
   {
     "id": 4,
-    "url": "img/img5.jpg",
-    "alt": "Hola soy la quinta imagen",
+    "url": "img/face/bites_1.jpg",
+    "alt": "Bites piercing",
     "explicitContent": false
   },
   {
     "id": 5,
-    "url": "img/img6.jpg",
-    "alt": "Hola soy la sexta imagen",
+    "url": "img/face/bites_2.jpg",
+    "alt": "Bites piercing",
     "explicitContent": false
   },
   {
     "id": 6,
-    "url": "img/imgPrueba.png",
-    "alt": "Hola soy la septima imagen",
+    "url": "img/face/bridge-eyebrown_1.jpg",
+    "alt": "Eye brown piercing",
+    "explicitContent": false
+  },
+  {
+    "id": 7,
+    "url": "img/face/eye_snakes_2.jpg",
+    "alt": "Eye snake piercing",
+    "explicitContent": false
+  },
+  {
+    "id": 8,
+    "url": "img/face/eye-brown_1.jpg",
+    "alt": "Eye brown piercing",
+    "explicitContent": false
+  },
+  {
+    "id": 9,
+    "url": "img/face/eye-brown_2.jpg",
+    "alt": "Eye brown piercing",
+    "explicitContent": false
+  },
+  {
+    "id": 10,
+    "url": "img/face/eye-snake_1.jpg",
+    "alt": "Eye snake piercing",
+    "explicitContent": false
+  },
+  {
+    "id": 11,
+    "url": "img/face/eye-snake_3.jpg",
+    "alt": "Eye snake piercing",
+    "explicitContent": false
+  },
+  {
+    "id": 12,
+    "url": "img/face/eye-snake_4.jpg",
+    "alt": "Eye snake piercing",
+    "explicitContent": false
+  },
+  {
+    "id": 13,
+    "url": "img/face/eye-snake_5.jpg",
+    "alt": "Eye snake piercing",
+    "explicitContent": false
+  },
+  {
+    "id": 14,
+    "url": "img/face/eye-snake_6.jpg",
+    "alt": "Eye snake piercing",
+    "explicitContent": false
+  },
+  {
+    "id": 15,
+    "url": "img/face/frowni_1.jpg",
+    "alt": "Frowni",
+    "explicitContent": false
+  },
+  {
+    "id": 16,
+    "url": "img/face/septum-nostril-bites.jpg",
+    "alt": "Septum, Nostril y Bites",
+    "explicitContent": false
+  },
+  {
+    "id": 17,
+    "url": "img/face/smile_1.jpg",
+    "alt": "Smile",
+    "explicitContent": false
+  },
+  {
+    "id": 18,
+    "url": "img/face/smile_2.jpg",
+    "alt": "Smile",
+    "explicitContent": false
+  },
+  {
+    "id": 19,
+    "url": "img/face/smile_3.jpg",
+    "alt": "Smile",
+    "explicitContent": false
+  },
+  {
+    "id": 20,
+    "url": "img/face/smile_4.jpg",
+    "alt": "Smile",
+    "explicitContent": false
+  },
+  {
+    "id": 21,
+    "url": "img/face/tongue_1.jpg",
+    "alt": "Tongue piercing",
+    "explicitContent": false
+  },
+  {
+    "id": 22,
+    "url": "img/face/tongue_2.jpg",
+    "alt": "Tongue piercing",
+    "explicitContent": false
+  },
+  {
+    "id": 23,
+    "url": "img/face/tongue_3.jpg",
+    "alt": "Tongue piercing",
     "explicitContent": false
   }
 ]

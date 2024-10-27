@@ -1,20 +1,20 @@
 .services-title {
-  font-family: 'Alfa Slab One';
+  font-family: var(--title-font);
   font-size: 3rem;
-  color: #d5b981;
+  color: var(--main-color);
   text-align: center;
   padding: 1rem 0;
 }
 
 .service {
-  font-family: 'Alfa Slab One';
-  color: #bf9456;
+  font-family: var(--title-font);
+  color: var(--main-color);
   text-transform: uppercase;
 }
 
 .services-list {
   font-size: 1.3rem;
-  font-family: 'Open Sans';
+  font-family: var(--text-font);
 }
 
 .service-prize {
@@ -23,10 +23,10 @@
 
 .gallery-button {
   align-items: center;
-  font-family: 'Alfa Slab One';
+  font-family: var(--title-font);
   font-size: 0.9rem;
   padding: 0.2rem;
-  background-color: #d5b981d0;
+  background-color: #c0a061d0;
   color: white;
   display: flex;
   justify-content: center;

@@ -1,10 +1,10 @@
 ---
 import Gallery from '@/components/gallery/Gallery.astro';
 import Navbar from '@/components/header/navbar/Navbar.astro';
-import SubHeader from '@/components/sub_header/SubHeader.astro';
 import Layout from '@/layouts/Layout.astro';
 import faceImagesJSON from '@/data/images_info/faceImages.json';
 import SocialMedias from '@/components/social_medias/SocialMedias.astro';
+import Subheader from '@/components/subheader/Subheader.astro';
 
 const faceImages = faceImagesJSON;
 ---
@@ -12,17 +12,23 @@ const faceImages = faceImagesJSON;
 <Layout title="Piercing-rostro || Galería">
   <header slot="header">
     <Navbar />
-    <SubHeader>
-      <div slot="title" class="page-title">Piercing en el rostro</div>
-      <div slot="description" class="page-description w-72">
-        El piercing en la lengua suele hacerse por simple estética o por placer
-        sexual. Al principio genera una importante inflamación, pero al mismo
-        tiempo es uno de los más rápidos en cicatrizar.
+    <Subheader>
+      <div slot="page-title" class="page-title">Piercing en el rostro</div>
+      <div slot="page-description" class="page-description">
+        Los piercings en la cara son una forma popular de expresión personal y
+        estética. Estos piercings pueden incluir áreas como las cejas, la nariz,
+        los labios, el labio superior (medusa), y las mejillas (dimple). Cada
+        tipo de piercing facial tiene su propio proceso de cicatrización y
+        requiere cuidados específicos para asegurar una sanación adecuada. Los
+        piercings faciales no solo realzan las características del rostro, sino
+        que también permiten una amplia gama de estilos y combinaciones únicas.
+        Es crucial seguir las recomendaciones de un profesional para minimizar
+        el riesgo de infecciones y asegurar una recuperación saludable.
       </div>
-    </SubHeader>
+    </Subheader>
   </header>
   <main slot="main">
     <Gallery images={faceImages} />
-    <SocialMedias />
+    <SocialMedias name="piercing en el rostro" />
   </main>
 </Layout>
