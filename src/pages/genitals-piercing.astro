@@ -31,40 +31,22 @@ const genitalImages = genitalImagesJSON;
   </header>
   <main slot="main">
     <Gallery images={genitalImages} />
-    <SocialMedias />
+    <SocialMedias name="piercing genitales" />
   </main>
 </Layout>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const openLightBox = (event: MouseEvent) => {
-      const target = event.target as HTMLElement;
-      const imageId = target.getAttribute('data-image-id');
-      const explicitImageLink = document.getElementById(imageId!);
-      if (explicitImageLink) {
-        explicitImageLink.click();
-      }
-    };
+  import { showWarning, backToHome } from '@/lib/explicitContentManager.ts';
 
-    const hiddenInput = document.querySelector('.hidden-input');
-    if (hiddenInput) {
-      const event = new MouseEvent('click', {
-        view: window,
-        bubbles: true,
-        cancelable: true
-      });
-      hiddenInput.dispatchEvent(event);
-    }
+  document.addEventListener(
+    'astro:page-load',
+    () => {
+      showWarning();
+    },
+    { once: true }
+  );
 
-    const showImageButtons = document.querySelectorAll(
-      '.show-image'
-    ) as NodeListOf<HTMLElement>;
-    showImageButtons.forEach((imageButton) => {
-      imageButton.addEventListener('click', openLightBox);
-    });
-
-    document.querySelector('.back-btn')?.addEventListener('click', () => {
-      location.replace('index.html');
-    });
+  document.querySelector('.back-btn')?.addEventListener('click', () => {
+    backToHome();
   });
 </script>
