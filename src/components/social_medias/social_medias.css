@@ -1,6 +1,9 @@
 .visit-text {
-  color: var(--main-color);
-  font-family: var(--text-font);
-  text-align: center;
-  font-size: 1.5rem;
+    background: linear-gradient(90deg, #ffffff, #f0e6c2);
+    padding: 10px;
+    border-radius: 5px;
+    color: #d4af37;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
