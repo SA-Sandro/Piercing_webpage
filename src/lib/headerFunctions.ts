@@ -17,7 +17,12 @@ const infoContainer = document.querySelector('.info-container') as HTMLElement;
       infoContainer?.classList.add('face-background');
       return;
     }
+
+    if (currentUrl.includes('genitals-piercing')) {
       infoContainer?.classList.add('genital-background');
+      return;
+    }
+      
 }
 
 export const updateRightPosition = () => {
