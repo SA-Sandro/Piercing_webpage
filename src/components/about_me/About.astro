@@ -45,7 +45,7 @@ import Image from '@/components/my_images/Image.astro';
         muted
         loop
         width="150"
-        class="grayscale md:w-full rounded-lg shadow-2xl"
+        class="grayscale md:w-full rounded-lg shadow-2xl blur-sm"
       >
         <source src="media/proceso_piercing.mp4" type="video/mp4" />
         Tu navegador no soporta el formato de este vídeo
@@ -74,7 +74,13 @@ import Image from '@/components/my_images/Image.astro';
       últimas tendencias y estilos en piercings.
     </div>
     <div class="mx-auto">
-      <video controls width="250" class="grayscale rounded-lg shadow-2xl">
+      <video
+        autoplay
+        loop
+        muted
+        width="250"
+        class="grayscale rounded-lg shadow-2xl blur-sm"
+      >
         <source src="media/video_formacion1.mp4" type="video/mp4" />
         Tu navegador no soporta el formato de este vídeo
       </video>
