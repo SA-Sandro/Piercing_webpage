@@ -1,15 +1,15 @@
 import { renderers } from './renderers.mjs';
-import { manifest } from './manifest_DoERr7X9.mjs';
+import { manifest } from './manifest_CFIz2Rkc.mjs';
 import * as serverEntrypointModule from '@astrojs/netlify/ssr-function.js';
 import { onRequest } from './_noop-middleware.mjs';
 
 const _page0 = () => import('./chunks/generic_k736vELz.mjs');
-const _page1 = () => import('./chunks/404_BuZzkWHR.mjs');
-const _page2 = () => import('./chunks/body-piercing_AlO72ZdF.mjs');
-const _page3 = () => import('./chunks/ear-piercing_uBV9XEWm.mjs');
-const _page4 = () => import('./chunks/face-piercing_Ccx4XLE_.mjs');
-const _page5 = () => import('./chunks/genitals-piercing_Cr5dO_vM.mjs');
-const _page6 = () => import('./chunks/index_CgN0H6nJ.mjs');
+const _page1 = () => import('./chunks/404_6uR4BlsX.mjs');
+const _page2 = () => import('./chunks/body-piercing_B-JtU1Zw.mjs');
+const _page3 = () => import('./chunks/ear-piercing_DcX_VRgW.mjs');
+const _page4 = () => import('./chunks/face-piercing_C8xMaS1H.mjs');
+const _page5 = () => import('./chunks/genitals-piercing_Dz8C_UKY.mjs');
+const _page6 = () => import('./chunks/index_CweQ598t.mjs');
 const pageMap = new Map([
     ["node_modules/astro/dist/assets/endpoint/generic.js", _page0],
     ["src/pages/404.astro", _page1],
@@ -26,7 +26,7 @@ const _manifest = Object.assign(manifest, {
     middleware: onRequest
 });
 const _args = {
-    "middlewareSecret": "cc644dc7-2a84-45ff-8876-cee3730775d2"
+    "middlewareSecret": "7ebcd7ce-59e2-48e1-867e-48a53e2752c4"
 };
 const _exports = serverEntrypointModule.createExports(_manifest, _args);
 const __astrojsSsrVirtualEntry = _exports.default;

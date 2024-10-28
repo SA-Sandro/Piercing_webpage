@@ -2,9 +2,9 @@
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, h as renderComponent, d as addAttribute, e as createAstro } from '../astro_D7GAM5ol.mjs';
 import 'kleur/colors';
 import 'html-escaper';
-import { $ as $$Navbar, d as $$Layout } from './body-piercing_KnCkg5za.mjs';
+import { $ as $$Navbar, d as $$Layout } from './body-piercing_BlUwpGwU.mjs';
 /* empty css                          */
-import { $ as $$Image } from './404_CnQFCZq0.mjs';
+import { $ as $$Image } from './404_CAWn86lA.mjs';
 import 'clsx';
 
 const $$About = createComponent(($$result, $$props, $$slots) => {

@@ -2,7 +2,7 @@
 import { c as createComponent, r as renderTemplate, h as renderComponent, m as maybeRenderHead } from '../astro_D7GAM5ol.mjs';
 import 'kleur/colors';
 import 'html-escaper';
-import { $ as $$Navbar, a as $$Subheader, b as $$Gallery, c as $$SocialMedias, d as $$Layout } from './body-piercing_KnCkg5za.mjs';
+import { $ as $$Navbar, a as $$Subheader, b as $$Gallery, c as $$SocialMedias, d as $$Layout } from './body-piercing_BlUwpGwU.mjs';
 
 const earImagesJSON = [
 	{

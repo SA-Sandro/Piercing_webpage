@@ -45,7 +45,7 @@ Lamentamos comunicarle que no pudimos encontrar la página especificada
 </p> <p class="mt-4 mb-8">
 Pero no te preocupes, puedes volver a la página inicial y continuar con
         su navegación
-</p> <div class="text-center"> <a slot="icon" type="button" class="back-anchor" href="index.html">${renderComponent($$result, "Back", $$Back, {})}Volver
+</p> <div class="text-center"> <a slot="icon" type="button" class="back-anchor" href="/">${renderComponent($$result, "Back", $$Back, {})}Volver
 </a> </div> </div> </div> </div>`;
 }, "E:/Importante/DesarrolloSoftware/Oscar_Webpage/Piercing_webpage_astro/Piercing_webpage/src/components/404_error/Error404.astro", void 0);
 
