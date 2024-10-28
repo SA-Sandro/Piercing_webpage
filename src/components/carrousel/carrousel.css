@@ -6,7 +6,7 @@
 }
 
 .section-background {
-  background-image: url(img/background-testimonials.png);
+  background-image: url('/img/background-testimonials.png');
   background-size: cover;
   background-repeat: no-repeat;
 }

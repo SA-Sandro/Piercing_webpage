@@ -1,5 +1,5 @@
 .main-container {
-  background-image: url('img/background-header_v1.png');
+  background-image: url('/img/background-header_v1.png');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 20rem;
