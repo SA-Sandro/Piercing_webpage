@@ -1,0 +1,10 @@
+---
+import ErrorLayout from '@/layouts/ErrorLayout.astro';
+import Error404 from '@/components/404_error/Error404.astro';
+---
+
+<ErrorLayout title="404 Error">
+  <div slot="main" class="h-screen error-container">
+    <Error404 />
+  </div>
+</ErrorLayout>
