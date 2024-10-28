@@ -9,6 +9,6 @@ This website serves as a landing page for a small business run by a client. Its 
 Katapiercing is built using the following technologies:
 
 - **Astro** – For building the foundational structure and content of the website.
-- **Vue** (with TypeScript) – Used for adding interactivity and handling complex UI components.
+- **TypeScript** – For adding type safety and enhancing code quality.
 - **UIKit** – A component library providing pre-styled elements to accelerate development.
 - **Tailwind CSS** – For styling and custom design, enabling a clean and modern aesthetic.
