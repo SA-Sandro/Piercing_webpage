@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+.social-media div a {
+  font-family: var(--text-font);
+}
+
 .divide-line {
   margin: auto;
   width: 90%;
@@ -19,7 +23,8 @@
 }
 
 .copy-size {
-  font-size: 0.77rem;
+  font-size: 0.85rem;
+  font-family: var(--text-font);
 }
 
 .contact-inf div {
