@@ -11,7 +11,7 @@ import './navbar.css';
   <div class="flex items-center justify-between mx-auto max-w-7xl">
     <a
       class="flex items-center text-white hover:no-underline hover:text-inherit"
-      href="index.html"
+      href="/"
     >
       <Image
         src="img/Katapiercing_logo.png"
@@ -24,6 +24,7 @@ import './navbar.css';
       <SitesMenu />
     </div>
     <button
+      id="burguerButton"
       class="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle font-sans text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
       type="button"
     >
@@ -39,10 +40,12 @@ import './navbar.css';
   </div>
 </nav>
 
-<script is:inline defer>
-  const burguerButton = document.querySelector('button');
+<script>
+  document.addEventListener('astro:page-load', () => {
+    const burguerButton = document.querySelector('#burguerButton');
 
-  burguerButton?.addEventListener('click', () => {
-    document.querySelector('#menuContent')?.classList.toggle('show');
+    burguerButton?.addEventListener('click', () => {
+      document.querySelector('#menuContent')?.classList.toggle('show');
+    });
   });
 </script>
