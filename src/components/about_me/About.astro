@@ -3,69 +3,86 @@ import './about.css';
 import Image from '@/components/my_images/Image.astro';
 ---
 
-<div id="about">
+<div class="py-10">
   <div
     class="max-w-5xl grid lg:grid-cols-2 sm:grid-cols-1 items-center justify-center px-6 py-5 m-auto"
   >
     <div class="m-5 flex flex-col justify-center relative z-20">
       <div class="ab-title">SOBRE MÍ</div>
       <div class="ab-experience sm:max-w-lg m-auto">10 años de experiencia</div>
-      <div class="p-3 text-justify sm:max-w-lg m-auto">
+      <div class="p-3 text-pretty sm:max-w-lg m-auto">
         Desde hace una década, <span class="text-xl text-[#3a3a3a] font-bold"
           >Kata</span
         > se ha dedicado a perfeccionar el arte del piercing corporal, convirtiendo
         su pasión en una carrera llena de satisfacción y orgullo. Con una trayectoria
         de 10 años en la industria, Kata se especializa en la realización de todo
-        tipo de piercings, siempre garantizando la máxima precisión, rapidez y fiabilidad.
+        tipo de <span class="text-xl text-[#3a3a3a] font-bold">piercings</span>,
+        siempre garantizando la máxima precisión, rapidez y fiabilidad.
       </div>
     </div>
-    <di v class="flex justify-center items-center">
+    <div class="flex justify-center items-center">
       <div class="relative">
         <Image
-          class="image1"
-          src="img/imagen_sobremi_1.jpg"
-          alt={'Realización piercing'}
+          class="image1 px-1 lg:pt-10 sm:px-0"
+          src="img/kata2.png"
+          alt={'Realización tatto'}
         />
         <div class="image2-container">
-          <Image
-            class="image2"
-            src="img/imagen_sobremi_2.jpg"
-            alt={'Anillador'}
-          />
+          <Image class="image2" src="img/kata1.jpg" alt={'Kata'} />
         </div>
       </div>
-    </di>
+    </div>
   </div>
-  <div
-    class="max-w-4xl m-auto grid md:grid-cols-2 sm:grid-cols-1 items-center justify-center px-6"
-  >
-    <div class="video-container flex justify-center">
+  <div class="max-w-5xl m-auto my-20 sm:my-16">
+    <div class="text-pretty m-auto sm:max-w-2xl my-10 px-3">
+      Además de su labor como anillador, Kata se desempeña actualmente como
+      <span class="text-xl text-[#3a3a3a] font-bold">tatuador profesional</span
+      >, donde sobresalen sus habilidades artísticas y su meticulosa atención al
+      detalle. Esto le permite crear <span
+        class="text-xl text-[#3a3a3a] font-bold">diseños únicos</span
+      > y completamente personalizados, adaptados a las necesidades y deseos de cada
+      cliente.
+    </div>
+    <div class="flex justify-center items-center">
+      <div class="max-w-2xl m-auto mx-5">
+        <video
+          src="media/proceso_tattoo.mp4"
+          autoplay
+          muted
+          loop
+          class="shadow-2xl rounded-lg md:w-full"
+        >
+          <source src="media/proceso_piercing.mp4" type="video/mp4" />
+          Tu navegador no soporta el formato de este vídeo
+        </video>
+      </div>
+    </div>
+  </div>
+  <div class="my-20 sm:my-10"></div>
+  <div class="max-w-4xl m-auto grid sm:grid-cols-2 items-center px-6 sm:py-10">
+    <div class="w-64 sm:w-72 m-auto">
       <video
         autoplay
         muted
         loop
-        width="150"
         class="grayscale md:w-full rounded-lg shadow-2xl"
       >
         <source src="media/proceso_piercing.mp4" type="video/mp4" />
         Tu navegador no soporta el formato de este vídeo
       </video>
     </div>
-    <div class="text-justify sm:max-w-lg m-auto p-4">
+    <div class="text-pretty sm:max-w-lg m-auto p-4">
       El <span class="text-xl text-[#3a3a3a] font-bold">objetivo</span> principal
       es proporcionar a cada cliente una experiencia única y segura, asegurando de
       que cada procedimiento se realice con el mayor cuidado y profesionalismo. En
       sus trabajos, <span class="text-xl text-[#3a3a3a] font-bold">Kata</span> usa
       únicamente materiales de la más alta calidad y sigue estrictamente todas las
-      normas de higiene y esterilización. Ya sea tu primer piercing o uno más para
-      la colección, Kata ofrece un servicio personalizado y adaptado a tus necesidades
-      y deseos.
+      normas de higiene y esterilización. Ya sea un piercing o un tatuaje, Kata ofrece
+      un servicio personalizado y adaptado a tus necesidades.
     </div>
   </div>
-  <div
-    class="max-w-4xl m-auto grid md:grid-cols-2 sm:grid-cols-1 items-center justify-between px-6"
-  >
-    <div class="text-justify sm:max-w-lg p-4">
+  <div class="max-w-4xl m-auto grid sm:grid-cols-2 items-center px-6 sm:py-10">
+    <div class="text-pretty sm:max-w-lg p-4">
       <span class="text-xl text-[#3a3a3a] font-bold">Kata</span> también se dedica
       a la enseñanza y formación de nuevas personas en el arte del piercing, ofreciendo
       cursos detallados y prácticos que abarcan desde los conceptos básicos hasta
@@ -80,7 +97,8 @@ import Image from '@/components/my_images/Image.astro';
       </video>
     </div>
   </div>
-</div>
-<div class="ab-experience-sub max-w-xl text-justify m-auto my-5 p-5">
-  ¡Ven y descubre por qué tantos clientes apuestan por Kata!
+
+  <div class="ab-experience-sub max-w-xl text-pretty m-auto my-5 p-5">
+    ¡Ven y descubre por qué tantos clientes apuestan por Kata!
+  </div>
 </div>
