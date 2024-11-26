@@ -5,19 +5,18 @@
   font-size: 3rem;
 }
 
+.name{
+  font-family: var(--title-font);
+  color: #242420;
+}
+.testimonial{
+  font-family: var(--text-font);
+}
+
 .section-background {
   background-image: url('/img/background-testimonials.png');
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.card {
-  background-color: #f4f4f4;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-0.5rem);
 }
 
 .reviews-anchor {
