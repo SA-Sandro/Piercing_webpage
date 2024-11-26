@@ -5,7 +5,7 @@ import './carrousel.css';
 ---
 
 <div class="section-background">
-  <div class="reviews-title pt-10">RESEÑAS</div>
+  <div class="reviews-title pt-10">TESTIMONIOS</div>
   <div class="text-center text-white flex items-center justify-center">
     <div class="mx-3">
       <Image src="img/google_logo.png" alt="Logo de google" width={30} />
@@ -20,38 +20,32 @@ import './carrousel.css';
       />
     </div>
   </div>
-  <div class="text-white text-center pb-7">
+  <div class="text-white text-center pb-3">
     Basado en {reviewsJson.location_info.totalReviews}
   </div>
-  <div class="px-10 max-w-5xl m-auto uk-position-relative">
+  <div class="px-10 max-w-xl m-auto uk-position-relative">
     <div class="uk-visible-toggle uk-light" uk-slider="sets: true">
-      <div class="uk-slider-items uk-child-width-1-2@m">
+      <div class="uk-slider-items">
         {
           reviewsJson.reviews.map((review) => (
-            <div class=" mx-1 my-10 card max-h-80  overflow-scroll cursor-grabbing ">
-              <div class="flex justify-center select-none p-5">
-                <Image
-                  src={review.thumbnail}
-                  width={40}
-                  alt="usuario"
-                  class="mr-3"
-                />
-                <div>
-                  <p class="text-black m-0">{review.name}</p>
-                  <p class="text-gray-500 m-0">{review.duration}</p>
-                </div>
+            <div class="mx-1 my-10 bg-white rounded-2xl cursor-grabbing ">
+              <div class="p-3 flex justify-center">
+                <p class="name text-2xl m-0 border-b-[#242420] border-b">
+                  {' '}
+                  {review.name}{' '}
+                </p>
               </div>
-              <div class="snippet-container flex flex-col justify-center text-justify select-none px-10">
-                <div class="m-auto p-2 ">
-                  {review.rating === '5.0' ? (
-                    <Image
-                      src="img/five_starts.png"
-                      alt="5 estrellas"
-                      width={120}
-                    />
-                  ) : null}
-                </div>
-                <p class="italic text-black">{review.snippet}</p>
+              <div class=" flex justify-center">
+                {review.rating === '5.0' ? (
+                  <Image
+                    src="img/five_starts.png"
+                    alt="5 estrellas"
+                    width={120}
+                  />
+                ) : null}
+              </div>
+              <div class="snippet-container flex flex-col justify-center text-justify select-none px-10 mt-2">
+                <p class="testimonial italic text-black">{review.snippet}</p>
               </div>
             </div>
           ))
@@ -66,13 +60,5 @@ import './carrousel.css';
         uk-slidenav-next
         uk-slider-item="next"></a>
     </div>
-  </div>
-  <div class="text-center pb-10">
-    <a
-      target="_blank"
-      class="reviews-anchor"
-      href="https://www.google.com/maps/place/Templo+Piercing+y+Tattoo/@36.7249744,-4.4177848,16z/data=!3m1!4b1!4m6!3m5!1s0xd72f7a8e990f5c1:0xde8d0b5e571ebc91!8m2!3d36.7249744!4d-4.4177848!16s%2Fg%2F11vzbzh4v5?hl=es&entry=ttu"
-      >Ver más reseñas</a
-    >
   </div>
 </div>
