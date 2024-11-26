@@ -1,35 +1,9 @@
 {
   "location_info": {
-    "title": "Templo Piercing y Tattoo",
-    "address": "C. Frailes, 12, 2B, Málaga, España",
     "avgRating": "5.0",
     "totalReviews": "62 opiniones"
   },
-  "topics": [
-    { "keyword": "simpático", "mentions": "4" },
-    { "keyword": "precio", "mentions": "3" },
-    { "keyword": "pezón", "mentions": "3" },
-    { "keyword": "confianza", "mentions": "2" },
-    { "keyword": "volveré", "mentions": "2" },
-    { "keyword": "fosa nasal", "mentions": "2" },
-    { "keyword": "lengua", "mentions": "2" },
-    { "keyword": "ombligo", "mentions": "2" },
-    { "keyword": "limpieza", "mentions": "2" },
-    { "keyword": "higiénico", "mentions": "2" }
-  ],
   "reviews": [
-    {
-      "name": "León Martínez",
-      "link": "https://www.google.com/maps/contrib/105715140506484215478?hl=es-419&ved=1t:31294&ictx=111",
-      "thumbnail": "https://lh3.googleusercontent.com/a/ACg8ocIZ4x1CvnruXmN5Gmfr6akDKlBCruHRBje2xk_CLLo4XP4EiuA=s40-c-rp-mo-br100",
-      "reviews": "6 opinione",
-      "photos": "2",
-      "localGuide": false,
-      "rating": "5.0",
-      "duration": "22/06/2024",
-      "snippet": "Buenas, pasaba a contar un poco mi historia. Resulta que fui a un sitio diferente a este (Zima tatoo) y me hicieron un nostril en la nariz, muy poco profesional ya que no era un pendiente para nostril y tampoco la medida. Asi que realmente dios me puso en mi camino a templo tatoo y me ayudaron sin costo alguno, muy amablemente y profesionalmente, sacaron todas mis dudas, me dijeron que antibioticos debia consumir para evitar una infección grande, asi que sin nada mas que decir les agradezco muchisimo por lo que hicieron por mi, mas gente como ustedes que si valen la pena y merecen un verdadero reconocimiento",
-      "likes": "0Me gusta"
-    },
     {
       "name": "Esther Alvarez",
       "link": "https://www.google.com/maps/contrib/115594352892315439127?hl=es-419&ved=1t:31294&ictx=111",
@@ -116,7 +90,7 @@
       "localGuide": false,
       "rating": "5.0",
       "duration": "29/05/2024",
-      "snippet": "Excelente servicio, súper simpáticos y cuidadosos con absolutamente todo, muy atentos y amables, sin duda los próximos pearcings que vuelva a hacer van a ser aquí, por cierto ni te enteras de lo rápido que lo hacen 10/10Servicios Piercing torre y Piercing en la oreja",
+      "snippet": "Excelente servicio, súper simpáticos y cuidadosos con absolutamente todo, muy atentos y amables, sin duda los próximos pearcings que vuelva a hacer van a ser aquí, por cierto ni te enteras de lo rápido que lo hacen 10/10 Servicios Piercing torre y Piercing en la oreja",
       "likes": "1Me gusta"
     },
     {
